@@ -1,0 +1,63 @@
+
+
+
+/* 页面头部 */
+div#header {
+    background-color: #2a3440;
+    height: 60px;
+}
+div#header-inner {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 2px;
+}
+div#main-inner {
+    width: 90%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+div#title a {
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+}
+
+div#subtitle {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* 导航栏 */
+div#topnav ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 18px;
+}
+div#topnav ul li {
+    list-style: none;
+    float: left;
+}
+div#topnav ul li a {
+    display: block;
+    color: #2a3440;
+}
+div#topnav ul li.sep {
+    color: #ccc;
+    margin: 0 12px;
+}
+
+
+/* 页面底部 */
+div#footer-inner {
+    border-top: 1px solid #5a5a5a;
+    width: 90%;
+    max-width: 1024px;
+    margin: 20px auto 0;
+}
+div#footer-inner p {
+    text-align: right;
+    font-size: 14px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <title>CodingLabs - About me</title>
+        <link rel="stylesheet" href="{{mycss}}"/>
+        <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75dfda8ff8a93fa0b94adeb17da37a2f' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</head>
+    <body onload="prettyPrint()" style="font-family:verdana">
+    <div id="header">
+        <div id="header-inner">
+            <div id="title"><a href="/file">Coding Note</a></div>
+            <div id="subtitle">Welcome {{user}}</div>
+        </div>
+    </div>
+    <div id="main">
+    <div id="main-inner">
+    <h2>上传一个附件给我？</h2>
+        <form action="/uploadfile" method="post" enctype="multipart/form-data">
+            <label id="title_file" >文件名不支持特殊符号</label><br>
+            <input type='text' name='upfilename' style="display: none" /><br>
+            <input type="file" name='file' /><br>          
+            <input type="submit" value='submit'>
+        </form>
+
+ <div id="page-content">
+     <h2 id="自我介绍">下载一个文件？</h2>
+    <ul>
+    <li><a href="/down" >看看有什么？</a> </li>
+    </ul>
+ </div>
+
+</div>
+
+</div>
+
+
+
+    </body>
+
+</html>
