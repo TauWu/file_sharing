@@ -116,10 +116,11 @@ def downloadpage():
     mycss=url_for('static', filename='style.css')
     res = request.cookies.get('name_cookie_save')
     try:
-        if judge_cookie(res):
+        user = judge_cookie(res)
+        if user:
             flist=getfile()
             print(flist)
-            return render_template('downloadpage.html',mycss=mycss,fl=flist)
+            return render_template('downloadpage.html',mycss=mycss,fl=flist,user = user)
         else:
             return redirect('/login')
     except:
@@ -137,6 +138,8 @@ def downloadfile():
                 flist=getfile()
                 print ()
                 if isHavefile(downloadfilename):
+                    resp_file = make_response(send_from_directory('uploadfile',downloadfilename,as_attachment=True))
+                    resp_file.headers["Content-Disposition"] = "attachment; filename={}".format(downloadfilename.encode().decode('latin-1'))
                     return send_from_directory('uploadfile',downloadfilename,as_attachment=True)
                 else:
                     abort(404)

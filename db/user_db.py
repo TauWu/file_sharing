@@ -13,7 +13,7 @@ NAME = 'user'
 
 
 class user_db(object):
-    def __init__(self,user_name,user_pwd = ''):
+    def __init__(self,user_name='',user_pwd = ''):
         self.mongo_uri = MONGO_URI
         self.mongo_db = MONGO_DB
         self.mongo_name = NAME
@@ -104,9 +104,9 @@ def remove_user(name):
         return db_connect.delete_user()
 
 if __name__ == '__main__':
-    #print(new_user('cxw','123456'))
-    #print(judge_user('cxw','123456'))
-    #print(find_user_mes('cxw'))
-    #print(change_pwd('cxw','123456','1234'))
-    #print(remove_user('cxw'))
+    #print(new_user('cxwc','123456'))
+    #print(judge_user('cxwc','123456'))
+    #print(find_user_mes('cxwc'))
+    #print(change_pwd('cxwc','123456','1234'))
+    #print(remove_user('cxwc'))
     pass
