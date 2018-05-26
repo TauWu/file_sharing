@@ -3,7 +3,7 @@
 
 /* 页面头部 */
 div#header {
-    background-color: #2a3440;
+    background-color: #ff6600;
     height: 60px;
 }
 div#header-inner {
@@ -43,6 +43,11 @@ div#topnav ul li {
 div#topnav ul li a {
     display: block;
     color: #2a3440;
+}
+div#topnav ul li b {
+    display: block;
+    color: #2a3440;
+    margin-left: 500px;
 }
 div#topnav ul li.sep {
     color: #ccc;

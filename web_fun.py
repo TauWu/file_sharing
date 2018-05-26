@@ -7,16 +7,8 @@ from db.cookie_db import *
 
 
 app = Flask(__name__)
+app.route
 
-'''@app.route('/login',methods=['POST','get'])
-def login():
-    mycss=url_for('static', filename='style.css')
-    return render_template('login.html',mycss=mycss)
-'''
-'''def relogin():
-    mycss=url_for('static', filename='style.css')
-    return render_template('relogin.html',mycss=mycss)
-'''
 #main页面
 
 
@@ -48,7 +40,7 @@ def login_in():
                 req_pwd = request.form.get('user_pwd')
                 try:
                     if judge_user(req_name,req_pwd):
-                        resp = make_response(render_template('upload.html',mycss=mycss))
+                        resp = make_response(redirect('/up'))
                         r = random_cookie()
                         resp.set_cookie('name_cookie_save',r)
                         new_cookie(req_name,r)
@@ -56,7 +48,7 @@ def login_in():
                     else:
                         return render_template('login.html',mycss=mycss,errMsg = '用户不存在或密码有误')
                 except:
-                   # return render_template('login.html',mycss=mycss,errMsg = '用户不存在或密码有误')
+                    return render_template('login.html',mycss=mycss,errMsg = '用户不存在或密码有误')
                     pass
     finally:
         pass
@@ -64,20 +56,22 @@ def login_in():
 
 @app.route('/uploadfile', methods=['POST','get'])
 def upload():
+    mycss=url_for('static', filename='style.css')
     res = request.cookies.get('name_cookie_save')
     try:
-        if judge_cookie(res):
+        user = judge_cookie(res)
+        if user:
             if request.method=='GET':
                 return '<h3>get 222 </h3>'
             if request.method=='POST':
-                relativepath='./uploadfile/'
+                relativepath='./uploadfile/'+user+'/'
                 upfilename=request.form['upfilename']
                 f=request.files['file']
                 fname=f.filename
                 for i in range(len(fname)):
-                    if fname[i] in r'!@#$%^&*+|\=-,/?><";’' or fname[i] in r':][}{￥……、。，？》《“：}{】【‘；':
+                    if fname[i] in r'!@#$^&*+|\=-/ ?><";’' or fname[i] in r':][}{￥……、。？》《“：}{】【‘；':
                         return render_template('uploadfile_ok.html',file_msg =  'upload failed : '+fname[i]+', change file name')
-                file_exit = getfile()
+                file_exit = getfile(user)[0]
                 if fname in file_exit:
                     return render_template('uploadfile_ok.html',file_msg =  fname + ' exited, upload failed, change file name')
                 f.save(os.path.join(relativepath,fname))
@@ -86,11 +80,11 @@ def upload():
                 return render_template('uploadfile_ok.html',file_msg = 'upload OK : ' + fname)
         else:
             return redirect('/login')
-    finally:
-        pass
+    except:
+        return render_template('upload.html',mycss=mycss,user = user)
 
 #显示上传页面 同时也是主页面
-@app.route('/up', methods=['POST','get'])
+@app.route('/up/', methods=['POST','get'])
 def up():
     mycss=url_for('static', filename='style.css')
     res = request.cookies.get('name_cookie_save')
@@ -105,22 +99,29 @@ def up():
 
 
 
-@app.route('/file', methods=['POST','get'])
-def file():
+@app.route('/file/', methods=['POST','get'])
+def file_page():
     mycss=url_for('static', filename='style.css')
     return redirect('/')
 
 
-@app.route('/down', methods=['GET'])
+
+@app.route('/down/',  methods=['POST','get'])
 def downloadpage():
     mycss=url_for('static', filename='style.css')
     res = request.cookies.get('name_cookie_save')
     try:
         user = judge_cookie(res)
-        if user:
+        if 1:
             flist=getfile()
+            fl = []
+            for i in range(len(flist[1])):
+                if flist[1][i]:
+                    fl.append([flist[0][i],flist[1][i][1:]])
+                else:
+                    fl.append([flist[0][i],'文件夹'])
             print(flist)
-            return render_template('downloadpage.html',mycss=mycss,fl=flist,user = user)
+            return render_template('downloadpage.html',mycss=mycss,fl=flist[0],user =user)
         else:
             return redirect('/login')
     except:
@@ -128,25 +129,51 @@ def downloadpage():
 
 
 #下载要下载的文件，要下载的文件是通过get方法来传递的
-@app.route('/downloadfile', methods=['GET'])
+@app.route('/downloadfile/', methods=['GET'])
 def downloadfile():
     res = request.cookies.get('name_cookie_save')
+    downloadfilename=request.args.get('filename')
+
     try:
-        if judge_cookie(res):
+        if 1:
             if request.method=='GET':
-                downloadfilename=request.args.get('filename')
-                flist=getfile()
                 print ()
                 if isHavefile(downloadfilename):
+                    flist=getfile()[0]
                     resp_file = make_response(send_from_directory('uploadfile',downloadfilename,as_attachment=True))
                     resp_file.headers["Content-Disposition"] = "attachment; filename={}".format(downloadfilename.encode().decode('latin-1'))
-                    return send_from_directory('uploadfile',downloadfilename,as_attachment=True)
+                    return resp_file
                 else:
-                    abort(404)
+                    return redirect('/userdownloadpage/{}'.format(downloadfilename),code=301)
         else:
             return redirect('/login')
     except:
         pass        
+
+@app.route('/userdownloadpage/<user_name>', methods=['GET'])
+def userdownloadpage(user_name):
+    mycss=url_for('static', filename='style.css')
+    res = request.cookies.get('name_cookie_save')
+    try:
+        user = judge_cookie(res)
+        if 1:
+            flist=getfile(user_name)
+            fl = []
+            for i in range(len(flist[1])):
+                if flist[1][i]:
+                    fl.append([flist[0][i],flist[1][i][1:]])
+                else:
+                    fl.append([flist[0][i],'文件夹'])
+            print(flist)
+            return render_template('userdownloadpage.html',mycss=mycss,fl=flist[0],user =user,user_name=user_name)
+        else:
+            return redirect('/login')
+    except:
+        pass     
+
+
+
+
 
 if __name__ == '__main__':
     app.run(host = '0.0.0.0',port=5003,debug=True)

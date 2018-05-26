@@ -8,18 +8,19 @@
         <script type="text/javascript">
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75dfda8ff8a93fa0b94adeb17da37a2f' type='text/javascript'%3E%3C/script%3E"));
+        
 </script>
 
 </head>
     <body onload="prettyPrint()" style="font-family:verdana">
-    <div id="header">
+    <div id="header" >
         <div id="header-inner">
-            <div id="title"><a href="/file">Coding Note</a></div>
+            <div id="title"><a href="/file">HOME PAGE</a></div>
             <div id="subtitle">Welcome {{user}}</div>
         </div>
     </div>
-    <div id="main">
-    <div id="main-inner">
+    <div id="main" >
+    <div id="main-inner" float:left>
     <h2>上传一个附件给我？</h2>
         <form action="/uploadfile" method="post" enctype="multipart/form-data">
             <label id="title_file" >文件名不支持特殊符号</label><br>
@@ -28,17 +29,18 @@
             <input type="submit" value='submit'>
         </form>
 
- <div id="my-page-content">
+ <div id="my-page-content" float:left>
      <h2 id="my_file_title">查看我的文件</h2>
     <ul>
-    <li><a href="/down" >看看有什么？</a> </li>
+    <li><a href="/userdownloadpage/{{user}}" >看看有什么？</a> </li>
     </ul>
  </div>
 
- <div id="page-content">
-    <h2 id="自我介绍">查看大家的文件</h2>
+ <div id="page-content" float:left>
+    <h2 id="file_title">查看大家的文件</h2>
    <ul>
    <li><a href="/down" >看看有什么？</a> </li>
+   <ul>
 </div>
 
 </div>

@@ -104,7 +104,7 @@ def judge_cookie(cookie):
         else:
             return False
     except:
-        return False
+        return ''
 
 
 def remove_cookie(name):

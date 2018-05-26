@@ -28,7 +28,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
      <h2 id="自我介绍">下载一个试试看？</h2>
     <ul>
         {% for file in fl%}
-        <li ><a href="/downloadfile?filename={{file}}" >  {{file}} </a>
+        <li ><a href="/downloadfile?filename={{user_name}}/{{file}}" >  {{file}} </a>
         </li>
         {% endfor %}
     </ul>
