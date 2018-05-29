@@ -2,9 +2,10 @@
 import os
 from flask import Flask, render_template, request, send_from_directory, url_for,redirect,jsonify,abort,make_response,config,Blueprint
 from module import *
-from db.user_db import *
-from db.cookie_db import *
-
+from mysqldb.user_db import *
+from mysqldb.cookie_db import *
+from mysqldb.file_db import *
+import gunicorn
 
 app = Flask(__name__)
 app.route
@@ -50,6 +51,8 @@ def login_in():
                 except:
                     return render_template('login.html',mycss=mycss,errMsg = '用户不存在或密码有误')
                     pass
+    except:
+        return render_template('login.html',mycss=mycss,errMsg = '用户不存在或密码有误')
     finally:
         pass
 
@@ -69,15 +72,16 @@ def upload():
                 f=request.files['file']
                 fname=f.filename
                 for i in range(len(fname)):
-                    if fname[i] in r'!@#$^&*+|\=-/ ?><";’' or fname[i] in r':][}{￥……、。？》《“：}{】【‘；':
-                        return render_template('uploadfile_ok.html',file_msg =  'upload failed : '+fname[i]+', change file name')
+                    if fname[i] in r'!@#%$^&\| /':
+                        return render_template('doing_ok.html',url = 'up',file_msg =  'upload failed : '+fname[i]+', change file name')
                 file_exit = getfile(user)[0]
                 if fname in file_exit:
-                    return render_template('uploadfile_ok.html',file_msg =  fname + ' exited, upload failed, change file name')
+                    return render_template('doing_ok.html',url = 'up',file_msg =  fname + ' exited, upload failed, change file name')
                 f.save(os.path.join(relativepath,fname))
+                print(new_filename(name = user,filename = fname))
                 print(upfilename)
                 print(fname)
-                return render_template('uploadfile_ok.html',file_msg = 'upload OK : ' + fname)
+                return render_template('doing_ok.html',url = 'up',file_msg = 'upload OK : ' + fname)
         else:
             return redirect('/login')
     except:
@@ -129,7 +133,7 @@ def downloadpage():
 
 
 #下载要下载的文件，要下载的文件是通过get方法来传递的
-@app.route('/downloadfile/', methods=['GET'])
+@app.route('/downloadfile/', methods=['GET','post'])
 def downloadfile():
     res = request.cookies.get('name_cookie_save')
     downloadfilename=request.args.get('filename')
@@ -156,7 +160,7 @@ def userdownloadpage(user_name):
     res = request.cookies.get('name_cookie_save')
     try:
         user = judge_cookie(res)
-        if 1:
+        if user:
             flist=getfile(user_name)
             fl = []
             for i in range(len(flist[1])):
@@ -171,9 +175,25 @@ def userdownloadpage(user_name):
     except:
         pass     
 
-
-
+@app.route('/delete',methods=['GET','post'])
+def delete_file():
+    mycss=url_for('static', filename='style.css')
+    try:
+        if request.method=='GET':
+            return 'wrong try'    
+        if request.method=='POST':
+            res = request.cookies.get('name_cookie_save')
+            user = judge_cookie(res)
+            if user:
+                file_name = request.form['file_name']
+                os.remove('./uploadfile/'+user+'/'+file_name)
+                return render_template('doing_ok.html',url = 'userdownloadpage/{}'.format(user),file_msg = 'delete OK : ' + file_name)
+    except Exception as e:
+        print(e)
 
 
 if __name__ == '__main__':
+
+    from werkzeug.contrib.fixers import ProxyFix
+    app.wsgi_app = ProxyFix(app.wsgi_app)
     app.run(host = '0.0.0.0',port=5003,debug=True)

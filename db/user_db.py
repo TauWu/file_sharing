@@ -67,6 +67,7 @@ def new_user(name,pwd):
         return 'user existed'
     else:
         db_connect.insert_user()
+        os.mkdir('./uploadfile'+name)
         return 'successful create user '+name
 
 def find_user_mes(name):

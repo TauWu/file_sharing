@@ -8,6 +8,14 @@
         <script type="text/javascript">
 var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
 document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75dfda8ff8a93fa0b94adeb17da37a2f' type='text/javascript'%3E%3C/script%3E"));
+function editinfo() 
+{ 
+if(confirm("确定删除{{file}}吗")){ 
+method = "post"; 
+action ="modifyParam.action"; 
+submit(); 
+} 
+} 
 </script>
 
 </head>
@@ -28,7 +36,11 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
      <h2 id="自我介绍">下载一个试试看？</h2>
     <ul>
         {% for file in fl%}
-        <li ><a href="/downloadfile?filename={{user_name}}/{{file}}" >  {{file}} </a>
+        <li ><form action="/delete" method="post" enctype="multipart/form-data">
+            <input type='text' name='file_name' style="display: none" value="{{file}}"/>
+            <input type="submit" onclick="editinfo();return false;"  value='delete'><a href="/downloadfile?filename={{user_name}}/{{file}}" >  {{file}} </a>
+
+        </form>
         </li>
         {% endfor %}
     </ul>
