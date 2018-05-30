@@ -124,9 +124,10 @@ def remove_user(name):
         return db_connect.delete_user()
 
 if __name__ == '__main__':
-    print(new_user('cxwc','123456'))
-    print(judge_user('cxwc','123456'))
-    print(find_user_mes('cxwc'))
-    print(change_pwd('cxwc','123456','1234'))
-    print(remove_user('cxwc'))
+    print(new_user('cq','123456'))
+    print(new_user('lwz','123456'))
+    #print(judge_user('cxwc','123456'))
+    #print(find_user_mes('cxwc'))
+    #print(change_pwd('cxwc','123456','1234'))
+    print(remove_user('cq'))
     pass

@@ -78,9 +78,7 @@ class cookie_db(object):
             return self.cursor.fetchall()    
         except:
             return 'delete failed'
-        finally:
-            self.cursor.close()
-            self.conn.close()
+
 
 def new_cookie(name,cookie): 
     db_connect = cookie_db(user_name = name , cookie = cookie)
