@@ -170,9 +170,9 @@ def userdownloadpage(user_name):
                     fl.append([flist[0][i],'文件夹'])
             print(flist)
             if user_name == user:
-                style_in = 'style="display: none"'    
+                style_in = '"inline"'    
             else :
-                style_in = ''
+                style_in = 'display: none'
             return render_template('userdownloadpage.html',mycss=mycss,fl=flist[0],user =user,user_name=user_name,style_in =style_in)
         else:
             return redirect('/login')
