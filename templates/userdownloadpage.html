@@ -34,12 +34,12 @@ submit();
     
  <div id="page-content">
      <h2 id="自我介绍">下载一个试试看？</h2>
+     <label id="title_file" >{{file_msg}}</label>
     <ul>
         {% for file in fl%}
-        <li ><form action="/delete" method="post" enctype="multipart/form-data">
+        <li ><form action="/userdownloadpage/{{user}}" method="post" enctype="multipart/form-data">
             <input type='text' name='file_name' style="display: none" value="{{file}}"/>
             <input type="submit" onclick="editinfo();return false;"  value='delete' style="{{style_in}}"/><a href="/downloadfile?filename={{user_name}}/{{file}}" >  {{file}} </a>
-
         </form>
         </li>
         {% endfor %}

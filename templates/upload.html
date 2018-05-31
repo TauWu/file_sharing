@@ -8,9 +8,9 @@
         <script type="text/javascript">
     var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
     document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F75dfda8ff8a93fa0b94adeb17da37a2f' type='text/javascript'%3E%3C/script%3E"));
-        
-</script>
 
+</script>
+   
 </head>
     <body onload="prettyPrint()" style="font-family:verdana">
     <div id="header" >
@@ -24,9 +24,10 @@
     <h2>上传一个附件给我？</h2>
         <form action="/uploadfile" method="post" enctype="multipart/form-data">
             <label id="title_file" >文件名不支持特殊符号</label><br>
-            <input type='text' name='upfilename' style="display: none" /><br>
+            <input type='text' name='upfilename' style="display: none" />
             <input type="file" name='file' /><br>          
-            <input type="submit" value='submit'>
+            <input type="submit" value='submit'><br>
+            <label id="title_file" >{{file_msg}}</label>
         </form>
 
  <div id="my-page-content" float:left>

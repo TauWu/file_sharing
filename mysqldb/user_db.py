@@ -86,7 +86,7 @@ def new_user(name,pwd):
         return 'user existed'
     else:
         db_connect.insert_user()
-        os.mkdir('./uploadfile'+name)
+        os.mkdir('./uploadfile/'+name)
         return 'successful create user '+name
 
 def find_user_mes(name):
@@ -124,10 +124,10 @@ def remove_user(name):
         return db_connect.delete_user()
 
 if __name__ == '__main__':
-    print(new_user('cq','123456'))
-    print(new_user('lwz','123456'))
+    #print(new_user('cq','123456'))
+    #print(new_user('lwz','123456'))
     #print(judge_user('cxwc','123456'))
     #print(find_user_mes('cxwc'))
     #print(change_pwd('cxwc','123456','1234'))
-    print(remove_user('cq'))
+    #print(remove_user('cq'))
     pass

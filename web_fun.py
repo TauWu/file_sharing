@@ -6,6 +6,7 @@ from mysqldb.user_db import *
 from mysqldb.cookie_db import *
 from mysqldb.file_db import *
 import gunicorn
+import string
 
 app = Flask(__name__)
 app.route
@@ -19,7 +20,7 @@ def hello():
     res = request.cookies.get('name_cookie_save')
     try:
         if judge_cookie(res):
-            return redirect('/up')
+            return redirect('/uploadfile')
         else:
             return redirect('/login')
     except:
@@ -32,7 +33,7 @@ def login_in():
     user_cookie = judge_cookie(res)
     try:
         if user_cookie:
-            return redirect('/up')
+            return redirect('/uploadfile')
         else:
             if request.method=='GET':
                 return render_template('login.html',mycss=mycss)
@@ -41,7 +42,7 @@ def login_in():
                 req_pwd = request.form.get('user_pwd')
                 try:
                     if judge_user(req_name,req_pwd):
-                        resp = make_response(redirect('/up'))
+                        resp = make_response(redirect('/uploadfile'))
                         r = random_cookie()
                         resp.set_cookie('name_cookie_save',r)
                         new_cookie(req_name,r)
@@ -65,41 +66,44 @@ def upload():
         user = judge_cookie(res)
         if user:
             if request.method=='GET':
-                return '<h3>get 222 </h3>'
+                try:
+                    user = judge_cookie(res)
+                    if user:
+                        return render_template('upload.html',mycss=mycss,user = user)
+                    else:
+                        return redirect('/login')
+                except:
+                    pass
             if request.method=='POST':
                 relativepath='./uploadfile/'+user+'/'
+                upfilename = ''
+                file_msg = ''
                 upfilename=request.form['upfilename']
                 f=request.files['file']
                 fname=f.filename
                 for i in range(len(fname)):
-                    if fname[i] in r'!@#%$^&\| /':
-                        return render_template('doing_ok.html',url = 'up',file_msg =  'upload failed : '+fname[i]+', change file name')
+                    if fname[i] in r'!@#%$^&\| /' :
+                        file_msg = '文件名非法: '+fname[i]+', change file name'
+                        return render_template('upload.html',mycss = mycss,user = user, file_msg = file_msg)
+                if fname.find('.') == -1:
+                    file_msg = '文件名非法,缺少类型, change file name'
+                    return render_template('upload.html',mycss = mycss,user = user, file_msg = file_msg)
                 file_exit = getfile(user)[0]
                 if fname in file_exit:
-                    return render_template('doing_ok.html',url = 'up',file_msg =  fname + ' exited, upload failed, change file name')
+                    file_msg =  '文件存在: '+fname+' , change file name'
+                    return render_template('upload.html',mycss = mycss,user = user, file_msg = file_msg)
                 f.save(os.path.join(relativepath,fname))
                 print(new_filename(name = user,filename = fname))
                 print(upfilename)
                 print(fname)
-                return render_template('doing_ok.html',url = 'up',file_msg = 'upload OK : ' + fname)
+                file_msg =  '保存成功 : ' + fname
+                return render_template('upload.html',mycss = mycss,user = user, file_msg = file_msg)
         else:
             return redirect('/login')
     except:
         return render_template('upload.html',mycss=mycss,user = user)
 
-#显示上传页面 同时也是主页面
-@app.route('/up/', methods=['POST','get'])
-def up():
-    mycss=url_for('static', filename='style.css')
-    res = request.cookies.get('name_cookie_save')
-    try:
-        user = judge_cookie(res)
-        if user:
-            return render_template('upload.html',mycss=mycss,user = user)
-        else:
-            return redirect('/login')
-    except:
-        pass
+
 
 
 
@@ -145,7 +149,6 @@ def downloadfile():
                 if isHavefile(downloadfilename):
                     flist=getfile()[0]
                     resp_file = make_response(send_from_directory('uploadfile',downloadfilename,as_attachment=True))
-                    resp_file.headers["Content-Disposition"] = "attachment; filename={}".format(downloadfilename.encode().decode('latin-1'))
                     return resp_file
                 else:
                     return redirect('/userdownloadpage/{}'.format(downloadfilename),code=301)
@@ -160,7 +163,7 @@ def userdownloadpage(user_name):
     res = request.cookies.get('name_cookie_save')
     try:
         user = judge_cookie(res)
-        if user:
+        if 1:
             flist=getfile(user_name)
             fl = []
             for i in range(len(flist[1])):
@@ -179,9 +182,10 @@ def userdownloadpage(user_name):
     except:
         pass     
 
-@app.route('/delete',methods=['GET','post'])
-def delete_file():
+@app.route('/userdownloadpage/<user_name>',methods=['post'])
+def delete_file(user_name):
     mycss=url_for('static', filename='style.css')
+    user = user_name
     try:
         if request.method=='GET':
             return 'wrong try'    
@@ -191,7 +195,10 @@ def delete_file():
             if user:
                 file_name = request.form['file_name']
                 os.remove('./uploadfile/'+user+'/'+file_name)
-                return render_template('doing_ok.html',url = 'userdownloadpage/{}'.format(user),file_msg = 'delete OK : ' + file_name)
+                return '''<script type="text/javascript">
+    alert("删除{}成功");
+    window.history.back()
+</script>'''.format(file_name)
     except Exception as e:
         print(e)
 

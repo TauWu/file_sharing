@@ -1,0 +1,1939 @@
+[2018-05-31 00:04:15 +0800] [21856] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:04:15 +0800] [21856] [INFO] Listening at: http://0.0.0.0:5003 (21856)
+[2018-05-31 00:04:15 +0800] [21856] [INFO] Using worker: sync
+[2018-05-31 00:04:15 +0800] [21861] [INFO] Booting worker with pid: 21861
+[2018-05-31 00:04:15 +0800] [21862] [INFO] Booting worker with pid: 21862
+[2018-05-31 00:04:16 +0800] [21863] [INFO] Booting worker with pid: 21863
+[2018-05-31 00:04:16 +0800] [21864] [INFO] Booting worker with pid: 21864
+[2018-05-31 00:04:16 +0800] [21867] [INFO] Booting worker with pid: 21867
+[2018-05-31 00:04:57 +0800] [21862] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 00:05:48 +0800] [21856] [INFO] Handling signal: term
+[2018-05-31 00:05:48 +0800] [21861] [INFO] Worker exiting (pid: 21861)
+[2018-05-31 00:05:48 +0800] [21863] [INFO] Worker exiting (pid: 21863)
+[2018-05-31 00:05:48 +0800] [21867] [INFO] Worker exiting (pid: 21867)
+()
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:05:48 +0800] [21864] [INFO] Worker exiting (pid: 21864)
+()
+[2018-05-31 00:05:48 +0800] [21862] [INFO] Worker exiting (pid: 21862)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:05:49 +0800] [21856] [INFO] Shutting down: Master
+[2018-05-31 00:06:19 +0800] [22107] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:06:19 +0800] [22107] [INFO] Listening at: http://0.0.0.0:5003 (22107)
+[2018-05-31 00:06:19 +0800] [22107] [INFO] Using worker: sync
+[2018-05-31 00:06:19 +0800] [22112] [INFO] Booting worker with pid: 22112
+[2018-05-31 00:06:19 +0800] [22113] [INFO] Booting worker with pid: 22113
+[2018-05-31 00:06:19 +0800] [22115] [INFO] Booting worker with pid: 22115
+[2018-05-31 00:06:20 +0800] [22116] [INFO] Booting worker with pid: 22116
+[2018-05-31 00:06:20 +0800] [22117] [INFO] Booting worker with pid: 22117
+[2018-05-31 00:06:28 +0800] [22113] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 00:06:57 +0800] [22107] [CRITICAL] WORKER TIMEOUT (pid:22112)
+[2018-05-31 00:06:57 +0800] [22107] [CRITICAL] WORKER TIMEOUT (pid:22117)
+[2018-05-31 00:06:57 +0800] [22117] [INFO] Worker exiting (pid: 22117)
+[2018-05-31 00:06:57 +0800] [22112] [INFO] Worker exiting (pid: 22112)
+[2018-05-31 00:06:57 +0800] [22209] [INFO] Booting worker with pid: 22209
+[2018-05-31 00:06:57 +0800] [22210] [INFO] Booting worker with pid: 22210
+[2018-05-31 00:23:00 +0800] [22107] [INFO] Handling signal: term
+[2018-05-31 00:23:00 +0800] [22113] [INFO] Worker exiting (pid: 22113)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:23:00 +0800] [22210] [INFO] Worker exiting (pid: 22210)
+[2018-05-31 00:23:00 +0800] [22115] [INFO] Worker exiting (pid: 22115)
+()
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:23:00 +0800] [22116] [INFO] Worker exiting (pid: 22116)
+()
+[2018-05-31 00:23:00 +0800] [22209] [INFO] Worker exiting (pid: 22209)
+[2018-05-31 00:23:00 +0800] [22107] [INFO] Shutting down: Master
+[2018-05-31 00:23:03 +0800] [23821] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:23:03 +0800] [23821] [INFO] Listening at: http://0.0.0.0:5003 (23821)
+[2018-05-31 00:23:03 +0800] [23821] [INFO] Using worker: sync
+[2018-05-31 00:23:03 +0800] [23826] [INFO] Booting worker with pid: 23826
+[2018-05-31 00:23:03 +0800] [23827] [INFO] Booting worker with pid: 23827
+[2018-05-31 00:23:03 +0800] [23828] [INFO] Booting worker with pid: 23828
+[2018-05-31 00:23:03 +0800] [23831] [INFO] Booting worker with pid: 23831
+[2018-05-31 00:23:03 +0800] [23833] [INFO] Booting worker with pid: 23833
+[2018-05-31 00:23:09 +0800] [23828] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 00:23:38 +0800] [23821] [CRITICAL] WORKER TIMEOUT (pid:23827)
+[2018-05-31 00:23:38 +0800] [23821] [CRITICAL] WORKER TIMEOUT (pid:23831)
+[2018-05-31 00:23:38 +0800] [23827] [INFO] Worker exiting (pid: 23827)
+[2018-05-31 00:23:38 +0800] [23831] [INFO] Worker exiting (pid: 23831)
+[2018-05-31 00:23:38 +0800] [23906] [INFO] Booting worker with pid: 23906
+[2018-05-31 00:23:38 +0800] [23908] [INFO] Booting worker with pid: 23908
+[2018-05-31 00:28:24 +0800] [23821] [INFO] Handling signal: term
+[2018-05-31 00:28:24 +0800] [23826] [INFO] Worker exiting (pid: 23826)
+()
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:28:24 +0800] [23828] [INFO] Worker exiting (pid: 23828)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:28:24 +0800] [23908] [INFO] Worker exiting (pid: 23908)
+[2018-05-31 00:28:24 +0800] [23833] [INFO] Worker exiting (pid: 23833)
+[2018-05-31 00:28:24 +0800] [23906] [INFO] Worker exiting (pid: 23906)
+[2018-05-31 00:28:24 +0800] [23821] [INFO] Shutting down: Master
+[2018-05-31 00:28:26 +0800] [24567] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:28:26 +0800] [24567] [INFO] Listening at: http://0.0.0.0:5003 (24567)
+[2018-05-31 00:28:26 +0800] [24567] [INFO] Using worker: sync
+[2018-05-31 00:28:26 +0800] [24571] [INFO] Booting worker with pid: 24571
+[2018-05-31 00:28:26 +0800] [24572] [INFO] Booting worker with pid: 24572
+[2018-05-31 00:28:26 +0800] [24573] [INFO] Booting worker with pid: 24573
+[2018-05-31 00:28:26 +0800] [24574] [INFO] Booting worker with pid: 24574
+[2018-05-31 00:28:26 +0800] [24577] [INFO] Booting worker with pid: 24577
+[2018-05-31 00:28:31 +0800] [24572] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode("ascii ")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 00:29:00 +0800] [24567] [CRITICAL] WORKER TIMEOUT (pid:24574)
+[2018-05-31 00:29:00 +0800] [24574] [INFO] Worker exiting (pid: 24574)
+[2018-05-31 00:29:00 +0800] [24658] [INFO] Booting worker with pid: 24658
+[2018-05-31 00:30:34 +0800] [24567] [INFO] Handling signal: term
+[2018-05-31 00:30:34 +0800] [24577] [INFO] Worker exiting (pid: 24577)
+[2018-05-31 00:30:34 +0800] [24572] [INFO] Worker exiting (pid: 24572)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:30:34 +0800] [24571] [INFO] Worker exiting (pid: 24571)
+[2018-05-31 00:30:34 +0800] [24658] [INFO] Worker exiting (pid: 24658)
+[2018-05-31 00:30:34 +0800] [24573] [INFO] Worker exiting (pid: 24573)
+()
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:30:35 +0800] [24567] [INFO] Shutting down: Master
+[2018-05-31 00:30:37 +0800] [24843] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:30:37 +0800] [24843] [INFO] Listening at: http://0.0.0.0:5003 (24843)
+[2018-05-31 00:30:37 +0800] [24843] [INFO] Using worker: sync
+[2018-05-31 00:30:37 +0800] [24846] [INFO] Booting worker with pid: 24846
+[2018-05-31 00:30:37 +0800] [24848] [INFO] Booting worker with pid: 24848
+[2018-05-31 00:30:37 +0800] [24849] [INFO] Booting worker with pid: 24849
+[2018-05-31 00:30:37 +0800] [24850] [INFO] Booting worker with pid: 24850
+[2018-05-31 00:30:37 +0800] [24853] [INFO] Booting worker with pid: 24853
+[2018-05-31 00:30:39 +0800] [24853] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode().decode('ascii')
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 140: ordinal not in range(128)
+[2018-05-31 00:31:20 +0800] [24843] [INFO] Handling signal: term
+[2018-05-31 00:31:20 +0800] [24848] [INFO] Worker exiting (pid: 24848)
+[2018-05-31 00:31:20 +0800] [24849] [INFO] Worker exiting (pid: 24849)
+[2018-05-31 00:31:20 +0800] [24850] [INFO] Worker exiting (pid: 24850)
+[2018-05-31 00:31:20 +0800] [24853] [INFO] Worker exiting (pid: 24853)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:31:20 +0800] [24846] [INFO] Worker exiting (pid: 24846)
+[2018-05-31 00:31:21 +0800] [24843] [INFO] Shutting down: Master
+[2018-05-31 00:31:23 +0800] [24930] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:31:23 +0800] [24930] [INFO] Listening at: http://0.0.0.0:5003 (24930)
+[2018-05-31 00:31:23 +0800] [24930] [INFO] Using worker: sync
+[2018-05-31 00:31:23 +0800] [24933] [INFO] Booting worker with pid: 24933
+[2018-05-31 00:31:23 +0800] [24934] [INFO] Booting worker with pid: 24934
+[2018-05-31 00:31:23 +0800] [24936] [INFO] Booting worker with pid: 24936
+[2018-05-31 00:31:23 +0800] [24938] [INFO] Booting worker with pid: 24938
+[2018-05-31 00:31:23 +0800] [24940] [INFO] Booting worker with pid: 24940
+[2018-05-31 00:31:27 +0800] [24938] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 331, in write
+    sock.sendall(data)
+TypeError: a bytes-like object is required, not 'str'
+[2018-05-31 00:33:23 +0800] [24930] [INFO] Handling signal: term
+[2018-05-31 00:33:23 +0800] [24936] [INFO] Worker exiting (pid: 24936)
+[2018-05-31 00:33:23 +0800] [24940] [INFO] Worker exiting (pid: 24940)
+[2018-05-31 00:33:23 +0800] [24933] [INFO] Worker exiting (pid: 24933)
+[2018-05-31 00:33:23 +0800] [24934] [INFO] Worker exiting (pid: 24934)
+[2018-05-31 00:33:23 +0800] [24938] [INFO] Worker exiting (pid: 24938)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:33:23 +0800] [24930] [INFO] Shutting down: Master
+[2018-05-31 00:33:25 +0800] [25148] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:33:25 +0800] [25148] [INFO] Listening at: http://0.0.0.0:5003 (25148)
+[2018-05-31 00:33:25 +0800] [25148] [INFO] Using worker: sync
+[2018-05-31 00:33:25 +0800] [25151] [INFO] Booting worker with pid: 25151
+[2018-05-31 00:33:25 +0800] [25153] [INFO] Booting worker with pid: 25153
+[2018-05-31 00:33:26 +0800] [25155] [INFO] Booting worker with pid: 25155
+[2018-05-31 00:33:26 +0800] [25157] [INFO] Booting worker with pid: 25157
+[2018-05-31 00:33:26 +0800] [25158] [INFO] Booting worker with pid: 25158
+[2018-05-31 00:33:31 +0800] [25153] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.decode('utf-8').encode()
+AttributeError: 'str' object has no attribute 'decode'
+[2018-05-31 00:33:50 +0800] [25148] [INFO] Handling signal: term
+[2018-05-31 00:33:50 +0800] [25153] [INFO] Worker exiting (pid: 25153)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:33:50 +0800] [25157] [INFO] Worker exiting (pid: 25157)
+[2018-05-31 00:33:50 +0800] [25155] [INFO] Worker exiting (pid: 25155)
+[2018-05-31 00:33:50 +0800] [25158] [INFO] Worker exiting (pid: 25158)
+[2018-05-31 00:33:50 +0800] [25151] [INFO] Worker exiting (pid: 25151)
+[2018-05-31 00:33:50 +0800] [25148] [INFO] Shutting down: Master
+[2018-05-31 00:33:53 +0800] [25218] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:33:53 +0800] [25218] [INFO] Listening at: http://0.0.0.0:5003 (25218)
+[2018-05-31 00:33:53 +0800] [25218] [INFO] Using worker: sync
+[2018-05-31 00:33:53 +0800] [25223] [INFO] Booting worker with pid: 25223
+[2018-05-31 00:33:53 +0800] [25224] [INFO] Booting worker with pid: 25224
+[2018-05-31 00:33:53 +0800] [25225] [INFO] Booting worker with pid: 25225
+[2018-05-31 00:33:53 +0800] [25226] [INFO] Booting worker with pid: 25226
+[2018-05-31 00:33:53 +0800] [25227] [INFO] Booting worker with pid: 25227
+[2018-05-31 00:34:13 +0800] [25218] [INFO] Handling signal: term
+[2018-05-31 00:34:13 +0800] [25224] [INFO] Worker exiting (pid: 25224)
+[2018-05-31 00:34:13 +0800] [25225] [INFO] Worker exiting (pid: 25225)
+[2018-05-31 00:34:13 +0800] [25227] [INFO] Worker exiting (pid: 25227)
+[2018-05-31 00:34:13 +0800] [25226] [INFO] Worker exiting (pid: 25226)
+[2018-05-31 00:34:13 +0800] [25223] [INFO] Worker exiting (pid: 25223)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:34:13 +0800] [25218] [INFO] Shutting down: Master
+[2018-05-31 00:34:15 +0800] [25267] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:34:15 +0800] [25267] [INFO] Listening at: http://0.0.0.0:5003 (25267)
+[2018-05-31 00:34:15 +0800] [25267] [INFO] Using worker: sync
+[2018-05-31 00:34:15 +0800] [25270] [INFO] Booting worker with pid: 25270
+[2018-05-31 00:34:16 +0800] [25271] [INFO] Booting worker with pid: 25271
+[2018-05-31 00:34:16 +0800] [25274] [INFO] Booting worker with pid: 25274
+[2018-05-31 00:34:16 +0800] [25275] [INFO] Booting worker with pid: 25275
+[2018-05-31 00:34:16 +0800] [25277] [INFO] Booting worker with pid: 25277
+[2018-05-31 00:34:43 +0800] [25275] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode().decode('ascii').encode()
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 140: ordinal not in range(128)
+[2018-05-31 00:38:33 +0800] [25267] [INFO] Handling signal: term
+[2018-05-31 00:38:33 +0800] [25274] [INFO] Worker exiting (pid: 25274)
+()
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:38:33 +0800] [25275] [INFO] Worker exiting (pid: 25275)
+[2018-05-31 00:38:33 +0800] [25277] [INFO] Worker exiting (pid: 25277)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:38:33 +0800] [25270] [INFO] Worker exiting (pid: 25270)
+[2018-05-31 00:38:33 +0800] [25271] [INFO] Worker exiting (pid: 25271)
+[2018-05-31 00:38:33 +0800] [25267] [INFO] Shutting down: Master
+[2018-05-31 00:38:36 +0800] [25740] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:38:36 +0800] [25740] [INFO] Listening at: http://0.0.0.0:5003 (25740)
+[2018-05-31 00:38:36 +0800] [25740] [INFO] Using worker: sync
+[2018-05-31 00:38:36 +0800] [25744] [INFO] Booting worker with pid: 25744
+[2018-05-31 00:38:36 +0800] [25745] [INFO] Booting worker with pid: 25745
+[2018-05-31 00:38:36 +0800] [25748] [INFO] Booting worker with pid: 25748
+[2018-05-31 00:38:36 +0800] [25749] [INFO] Booting worker with pid: 25749
+[2018-05-31 00:38:36 +0800] [25750] [INFO] Booting worker with pid: 25750
+[2018-05-31 00:38:39 +0800] [25750] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode("ascii").decode('ascii').encode("ascii")
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 00:39:58 +0800] [25740] [INFO] Handling signal: term
+[2018-05-31 00:39:58 +0800] [25744] [INFO] Worker exiting (pid: 25744)
+[2018-05-31 00:39:58 +0800] [25745] [INFO] Worker exiting (pid: 25745)
+[2018-05-31 00:39:58 +0800] [25748] [INFO] Worker exiting (pid: 25748)
+[2018-05-31 00:39:58 +0800] [25749] [INFO] Worker exiting (pid: 25749)
+[2018-05-31 00:39:58 +0800] [25750] [INFO] Worker exiting (pid: 25750)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:39:58 +0800] [25740] [INFO] Shutting down: Master
+[2018-05-31 00:40:00 +0800] [25886] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:40:00 +0800] [25886] [INFO] Listening at: http://0.0.0.0:5003 (25886)
+[2018-05-31 00:40:00 +0800] [25886] [INFO] Using worker: sync
+[2018-05-31 00:40:00 +0800] [25889] [INFO] Booting worker with pid: 25889
+[2018-05-31 00:40:00 +0800] [25891] [INFO] Booting worker with pid: 25891
+[2018-05-31 00:40:00 +0800] [25892] [INFO] Booting worker with pid: 25892
+[2018-05-31 00:40:00 +0800] [25893] [INFO] Booting worker with pid: 25893
+[2018-05-31 00:40:00 +0800] [25894] [INFO] Booting worker with pid: 25894
+[2018-05-31 00:43:07 +0800] [25886] [INFO] Handling signal: term
+[2018-05-31 00:43:07 +0800] [25894] [INFO] Worker exiting (pid: 25894)
+[2018-05-31 00:43:07 +0800] [25891] [INFO] Worker exiting (pid: 25891)
+[2018-05-31 00:43:07 +0800] [25893] [INFO] Worker exiting (pid: 25893)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:43:07 +0800] [25889] [INFO] Worker exiting (pid: 25889)
+[2018-05-31 00:43:07 +0800] [25892] [INFO] Worker exiting (pid: 25892)
+[2018-05-31 00:43:07 +0800] [25886] [INFO] Shutting down: Master
+[2018-05-31 00:43:10 +0800] [26206] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:43:10 +0800] [26206] [INFO] Listening at: http://0.0.0.0:5003 (26206)
+[2018-05-31 00:43:10 +0800] [26206] [INFO] Using worker: sync
+[2018-05-31 00:43:10 +0800] [26209] [INFO] Booting worker with pid: 26209
+[2018-05-31 00:43:10 +0800] [26210] [INFO] Booting worker with pid: 26210
+[2018-05-31 00:43:10 +0800] [26212] [INFO] Booting worker with pid: 26212
+[2018-05-31 00:43:10 +0800] [26214] [INFO] Booting worker with pid: 26214
+[2018-05-31 00:43:10 +0800] [26215] [INFO] Booting worker with pid: 26215
+[2018-05-31 00:43:34 +0800] [26206] [INFO] Handling signal: term
+[2018-05-31 00:43:34 +0800] [26212] [INFO] Worker exiting (pid: 26212)
+[2018-05-31 00:43:34 +0800] [26215] [INFO] Worker exiting (pid: 26215)
+[2018-05-31 00:43:34 +0800] [26209] [INFO] Worker exiting (pid: 26209)
+[2018-05-31 00:43:34 +0800] [26214] [INFO] Worker exiting (pid: 26214)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:43:34 +0800] [26210] [INFO] Worker exiting (pid: 26210)
+[2018-05-31 00:43:34 +0800] [26206] [INFO] Shutting down: Master
+[2018-05-31 00:43:36 +0800] [26270] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:43:36 +0800] [26270] [INFO] Listening at: http://0.0.0.0:5003 (26270)
+[2018-05-31 00:43:36 +0800] [26270] [INFO] Using worker: sync
+[2018-05-31 00:43:36 +0800] [26274] [INFO] Booting worker with pid: 26274
+[2018-05-31 00:43:36 +0800] [26276] [INFO] Booting worker with pid: 26276
+[2018-05-31 00:43:36 +0800] [26277] [INFO] Booting worker with pid: 26277
+[2018-05-31 00:43:37 +0800] [26279] [INFO] Booting worker with pid: 26279
+[2018-05-31 00:43:37 +0800] [26280] [INFO] Booting worker with pid: 26280
+[2018-05-31 00:43:38 +0800] [26279] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode('GBK').decode('GBK').encode('GBK')
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe6' in position 140: illegal multibyte sequence
+[2018-05-31 00:45:08 +0800] [26270] [INFO] Handling signal: term
+[2018-05-31 00:45:08 +0800] [26276] [INFO] Worker exiting (pid: 26276)
+[2018-05-31 00:45:08 +0800] [26280] [INFO] Worker exiting (pid: 26280)
+[2018-05-31 00:45:08 +0800] [26277] [INFO] Worker exiting (pid: 26277)
+[2018-05-31 00:45:08 +0800] [26279] [INFO] Worker exiting (pid: 26279)
+[2018-05-31 00:45:08 +0800] [26274] [INFO] Worker exiting (pid: 26274)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:45:08 +0800] [26270] [INFO] Shutting down: Master
+[2018-05-31 00:45:11 +0800] [26441] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:45:11 +0800] [26441] [INFO] Listening at: http://0.0.0.0:5003 (26441)
+[2018-05-31 00:45:11 +0800] [26441] [INFO] Using worker: sync
+[2018-05-31 00:45:11 +0800] [26444] [INFO] Booting worker with pid: 26444
+[2018-05-31 00:45:11 +0800] [26445] [INFO] Booting worker with pid: 26445
+[2018-05-31 00:45:11 +0800] [26446] [INFO] Booting worker with pid: 26446
+[2018-05-31 00:45:11 +0800] [26448] [INFO] Booting worker with pid: 26448
+[2018-05-31 00:45:11 +0800] [26450] [INFO] Booting worker with pid: 26450
+[2018-05-31 00:46:55 +0800] [26441] [INFO] Handling signal: term
+[2018-05-31 00:46:55 +0800] [26444] [INFO] Worker exiting (pid: 26444)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:46:55 +0800] [26448] [INFO] Worker exiting (pid: 26448)
+[2018-05-31 00:46:55 +0800] [26446] [INFO] Worker exiting (pid: 26446)
+[2018-05-31 00:46:55 +0800] [26445] [INFO] Worker exiting (pid: 26445)
+[2018-05-31 00:46:55 +0800] [26450] [INFO] Worker exiting (pid: 26450)
+[2018-05-31 00:46:55 +0800] [26441] [INFO] Shutting down: Master
+[2018-05-31 00:46:57 +0800] [26629] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:46:57 +0800] [26629] [INFO] Listening at: http://0.0.0.0:5003 (26629)
+[2018-05-31 00:46:57 +0800] [26629] [INFO] Using worker: sync
+[2018-05-31 00:46:57 +0800] [26633] [INFO] Booting worker with pid: 26633
+[2018-05-31 00:46:57 +0800] [26634] [INFO] Booting worker with pid: 26634
+[2018-05-31 00:46:57 +0800] [26636] [INFO] Booting worker with pid: 26636
+[2018-05-31 00:46:57 +0800] [26637] [INFO] Booting worker with pid: 26637
+[2018-05-31 00:46:57 +0800] [26639] [INFO] Booting worker with pid: 26639
+[2018-05-31 00:46:59 +0800] [26633] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 535, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 537, in to_bytestring
+    return value.encode().decode('GB2312').encode()
+UnicodeDecodeError: 'gb2312' codec can't decode byte 0xc2 in position 142: illegal multibyte sequence
+[2018-05-31 00:47:44 +0800] [26629] [INFO] Handling signal: term
+[2018-05-31 00:47:44 +0800] [26633] [INFO] Worker exiting (pid: 26633)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:47:44 +0800] [26634] [INFO] Worker exiting (pid: 26634)
+[2018-05-31 00:47:44 +0800] [26639] [INFO] Worker exiting (pid: 26639)
+[2018-05-31 00:47:44 +0800] [26636] [INFO] Worker exiting (pid: 26636)
+[2018-05-31 00:47:44 +0800] [26637] [INFO] Worker exiting (pid: 26637)
+[2018-05-31 00:47:44 +0800] [26629] [INFO] Shutting down: Master
+[2018-05-31 00:47:48 +0800] [26726] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:47:48 +0800] [26726] [INFO] Listening at: http://0.0.0.0:5003 (26726)
+[2018-05-31 00:47:48 +0800] [26726] [INFO] Using worker: sync
+[2018-05-31 00:47:48 +0800] [26729] [INFO] Booting worker with pid: 26729
+[2018-05-31 00:47:48 +0800] [26730] [INFO] Booting worker with pid: 26730
+[2018-05-31 00:47:48 +0800] [26732] [INFO] Booting worker with pid: 26732
+[2018-05-31 00:47:48 +0800] [26734] [INFO] Booting worker with pid: 26734
+[2018-05-31 00:47:48 +0800] [26735] [INFO] Booting worker with pid: 26735
+[2018-05-31 00:50:33 +0800] [26726] [INFO] Handling signal: term
+[2018-05-31 00:50:33 +0800] [26729] [INFO] Worker exiting (pid: 26729)
+[2018-05-31 00:50:33 +0800] [26730] [INFO] Worker exiting (pid: 26730)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:50:33 +0800] [26734] [INFO] Worker exiting (pid: 26734)
+[2018-05-31 00:50:33 +0800] [26732] [INFO] Worker exiting (pid: 26732)
+[2018-05-31 00:50:33 +0800] [26735] [INFO] Worker exiting (pid: 26735)
+[2018-05-31 00:50:33 +0800] [26726] [INFO] Shutting down: Master
+[2018-05-31 00:50:36 +0800] [27194] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:50:36 +0800] [27194] [INFO] Listening at: http://0.0.0.0:5003 (27194)
+[2018-05-31 00:50:36 +0800] [27194] [INFO] Using worker: sync
+[2018-05-31 00:50:36 +0800] [27200] [INFO] Booting worker with pid: 27200
+[2018-05-31 00:50:36 +0800] [27201] [INFO] Booting worker with pid: 27201
+[2018-05-31 00:50:36 +0800] [27204] [INFO] Booting worker with pid: 27204
+[2018-05-31 00:50:36 +0800] [27205] [INFO] Booting worker with pid: 27205
+[2018-05-31 00:50:36 +0800] [27207] [INFO] Booting worker with pid: 27207
+[2018-05-31 00:52:45 +0800] [27194] [INFO] Handling signal: term
+[2018-05-31 00:52:45 +0800] [27200] [INFO] Worker exiting (pid: 27200)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+/cxw
+/home/c/python/git/file_sharing
+['2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '校园市场启动会林总讲话稿.docx', '2018年校园市场启动会材料（上会稿）.pptx']
+/home/c/python/git/file_sharing
+(['校园市场启动会林总讲话稿.docx', '2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '2018年校园市场启动会材料（上会稿）.pptx'], ['.docx', '.pptx', '.pptx'])
+[2018-05-31 00:52:45 +0800] [27201] [INFO] Worker exiting (pid: 27201)
+()
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+[2018-05-31 00:52:45 +0800] [27207] [INFO] Worker exiting (pid: 27207)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:52:45 +0800] [27205] [INFO] Worker exiting (pid: 27205)
+[2018-05-31 00:52:45 +0800] [27204] [INFO] Worker exiting (pid: 27204)
+()
+()
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+[2018-05-31 00:52:45 +0800] [27194] [INFO] Shutting down: Master
+[2018-05-31 00:52:47 +0800] [27417] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:52:47 +0800] [27417] [INFO] Listening at: http://0.0.0.0:5003 (27417)
+[2018-05-31 00:52:47 +0800] [27417] [INFO] Using worker: sync
+[2018-05-31 00:52:47 +0800] [27420] [INFO] Booting worker with pid: 27420
+[2018-05-31 00:52:47 +0800] [27421] [INFO] Booting worker with pid: 27421
+[2018-05-31 00:52:47 +0800] [27424] [INFO] Booting worker with pid: 27424
+[2018-05-31 00:52:47 +0800] [27425] [INFO] Booting worker with pid: 27425
+[2018-05-31 00:52:47 +0800] [27426] [INFO] Booting worker with pid: 27426
+[2018-05-31 00:52:52 +0800] [27420] [ERROR] Error handling request /down/
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "unicode"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: unicode
+[2018-05-31 00:55:36 +0800] [27417] [INFO] Handling signal: term
+[2018-05-31 00:55:36 +0800] [27420] [INFO] Worker exiting (pid: 27420)
+[2018-05-31 00:55:36 +0800] [27424] [INFO] Worker exiting (pid: 27424)
+[2018-05-31 00:55:36 +0800] [27421] [INFO] Worker exiting (pid: 27421)
+[2018-05-31 00:55:36 +0800] [27425] [INFO] Worker exiting (pid: 27425)
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+
+/home/c/python/git/file_sharing
+['新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '.xls'])
+[2018-05-31 00:55:36 +0800] [27426] [INFO] Worker exiting (pid: 27426)
+[2018-05-31 00:55:36 +0800] [27417] [INFO] Shutting down: Master
+[2018-05-31 00:55:39 +0800] [27710] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:55:39 +0800] [27710] [INFO] Listening at: http://0.0.0.0:5003 (27710)
+[2018-05-31 00:55:39 +0800] [27710] [INFO] Using worker: sync
+[2018-05-31 00:55:39 +0800] [27713] [INFO] Booting worker with pid: 27713
+[2018-05-31 00:55:39 +0800] [27714] [INFO] Booting worker with pid: 27714
+[2018-05-31 00:55:39 +0800] [27715] [INFO] Booting worker with pid: 27715
+[2018-05-31 00:55:39 +0800] [27717] [INFO] Booting worker with pid: 27717
+[2018-05-31 00:55:39 +0800] [27718] [INFO] Booting worker with pid: 27718
+[2018-05-31 00:55:43 +0800] [27715] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BA%E6%96%87
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-148: ordinal not in range(128)
+[2018-05-31 00:56:06 +0800] [27710] [INFO] Handling signal: term
+[2018-05-31 00:56:06 +0800] [27718] [INFO] Worker exiting (pid: 27718)
+[2018-05-31 00:56:06 +0800] [27714] [INFO] Worker exiting (pid: 27714)
+[2018-05-31 00:56:06 +0800] [27713] [INFO] Worker exiting (pid: 27713)
+[2018-05-31 00:56:16 +0800] [27717] [INFO] Worker exiting (pid: 27717)
+[2018-05-31 00:56:16 +0800] [27715] [INFO] Worker exiting (pid: 27715)
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['新建文', 'lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '', '.xls'])
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:56:16 +0800] [27710] [INFO] Shutting down: Master
+[2018-05-31 00:56:19 +0800] [27783] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:56:19 +0800] [27783] [INFO] Listening at: http://0.0.0.0:5003 (27783)
+[2018-05-31 00:56:19 +0800] [27783] [INFO] Using worker: sync
+[2018-05-31 00:56:19 +0800] [27789] [INFO] Booting worker with pid: 27789
+[2018-05-31 00:56:19 +0800] [27790] [INFO] Booting worker with pid: 27790
+[2018-05-31 00:56:19 +0800] [27791] [INFO] Booting worker with pid: 27791
+[2018-05-31 00:56:19 +0800] [27792] [INFO] Booting worker with pid: 27792
+[2018-05-31 00:56:19 +0800] [27794] [INFO] Booting worker with pid: 27794
+[2018-05-31 00:56:20 +0800] [27790] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BA%E6%96%87
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "GBK"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe6' in position 140: illegal multibyte sequence
+[2018-05-31 00:56:25 +0800] [27789] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BA%E6%96%87
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "GBK"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'gbk' codec can't encode character '\xe6' in position 140: illegal multibyte sequence
+[2018-05-31 00:56:56 +0800] [27783] [INFO] Handling signal: term
+[2018-05-31 00:56:56 +0800] [27791] [INFO] Worker exiting (pid: 27791)
+[2018-05-31 00:56:56 +0800] [27790] [INFO] Worker exiting (pid: 27790)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:56:56 +0800] [27794] [INFO] Worker exiting (pid: 27794)
+[2018-05-31 00:56:56 +0800] [27792] [INFO] Worker exiting (pid: 27792)
+[2018-05-31 00:56:56 +0800] [27789] [INFO] Worker exiting (pid: 27789)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:56:56 +0800] [27783] [INFO] Shutting down: Master
+[2018-05-31 00:56:58 +0800] [27887] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:56:58 +0800] [27887] [INFO] Listening at: http://0.0.0.0:5003 (27887)
+[2018-05-31 00:56:58 +0800] [27887] [INFO] Using worker: sync
+[2018-05-31 00:56:58 +0800] [27891] [INFO] Booting worker with pid: 27891
+[2018-05-31 00:56:58 +0800] [27892] [INFO] Booting worker with pid: 27892
+[2018-05-31 00:56:58 +0800] [27893] [INFO] Booting worker with pid: 27893
+[2018-05-31 00:56:58 +0800] [27897] [INFO] Booting worker with pid: 27897
+[2018-05-31 00:56:58 +0800] [27899] [INFO] Booting worker with pid: 27899
+[2018-05-31 00:57:40 +0800] [27887] [INFO] Handling signal: term
+[2018-05-31 00:57:40 +0800] [27891] [INFO] Worker exiting (pid: 27891)
+[2018-05-31 00:57:40 +0800] [27897] [INFO] Worker exiting (pid: 27897)
+[2018-05-31 00:57:40 +0800] [27892] [INFO] Worker exiting (pid: 27892)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 00:57:40 +0800] [27893] [INFO] Worker exiting (pid: 27893)
+[2018-05-31 00:57:40 +0800] [27899] [INFO] Worker exiting (pid: 27899)
+[2018-05-31 00:57:40 +0800] [27887] [INFO] Shutting down: Master
+[2018-05-31 00:57:51 +0800] [28013] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:57:51 +0800] [28013] [INFO] Listening at: http://0.0.0.0:5003 (28013)
+[2018-05-31 00:57:51 +0800] [28013] [INFO] Using worker: sync
+[2018-05-31 00:57:51 +0800] [28016] [INFO] Booting worker with pid: 28016
+[2018-05-31 00:57:51 +0800] [28017] [INFO] Booting worker with pid: 28017
+[2018-05-31 00:57:51 +0800] [28018] [INFO] Booting worker with pid: 28018
+[2018-05-31 00:57:51 +0800] [28022] [INFO] Booting worker with pid: 28022
+[2018-05-31 00:57:51 +0800] [28023] [INFO] Booting worker with pid: 28023
+[2018-05-31 00:59:42 +0800] [28013] [INFO] Handling signal: term
+[2018-05-31 00:59:42 +0800] [28018] [INFO] Worker exiting (pid: 28018)
+[2018-05-31 00:59:42 +0800] [28022] [INFO] Worker exiting (pid: 28022)
+[2018-05-31 00:59:42 +0800] [28016] [INFO] Worker exiting (pid: 28016)
+[2018-05-31 00:59:42 +0800] [28017] [INFO] Worker exiting (pid: 28017)
+[2018-05-31 00:59:42 +0800] [28023] [INFO] Worker exiting (pid: 28023)
+[2018-05-31 00:59:42 +0800] [28013] [INFO] Shutting down: Master
+[2018-05-31 00:59:44 +0800] [28209] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 00:59:44 +0800] [28209] [INFO] Listening at: http://0.0.0.0:5003 (28209)
+[2018-05-31 00:59:44 +0800] [28209] [INFO] Using worker: sync
+[2018-05-31 00:59:44 +0800] [28214] [INFO] Booting worker with pid: 28214
+[2018-05-31 00:59:44 +0800] [28215] [INFO] Booting worker with pid: 28215
+[2018-05-31 00:59:45 +0800] [28217] [INFO] Booting worker with pid: 28217
+[2018-05-31 00:59:45 +0800] [28219] [INFO] Booting worker with pid: 28219
+[2018-05-31 00:59:45 +0800] [28222] [INFO] Booting worker with pid: 28222
+[2018-05-31 00:59:50 +0800] [28214] [ERROR] Error handling request /userdownloadpage/cxw
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str,"zh_CN.UTF-8" ))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: zh_CN.UTF-8
+[2018-05-31 01:03:46 +0800] [28209] [INFO] Handling signal: term
+[2018-05-31 01:03:46 +0800] [28219] [INFO] Worker exiting (pid: 28219)
+[2018-05-31 01:03:46 +0800] [28217] [INFO] Worker exiting (pid: 28217)
+[2018-05-31 01:03:46 +0800] [28215] [INFO] Worker exiting (pid: 28215)
+[2018-05-31 01:03:46 +0800] [28214] [INFO] Worker exiting (pid: 28214)
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+/cxw
+/home/c/python/git/file_sharing
+['2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '校园市场启动会林总讲话稿.docx', '2018年校园市场启动会材料（上会稿）.pptx']
+/home/c/python/git/file_sharing
+(['校园市场启动会林总讲话稿.docx', '2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '2018年校园市场启动会材料（上会稿）.pptx'], ['.docx', '.pptx', '.pptx'])
+[2018-05-31 01:03:46 +0800] [28222] [INFO] Worker exiting (pid: 28222)
+[2018-05-31 01:03:46 +0800] [28209] [INFO] Shutting down: Master
+[2018-05-31 01:03:49 +0800] [28603] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 01:03:49 +0800] [28603] [INFO] Listening at: http://0.0.0.0:5003 (28603)
+[2018-05-31 01:03:49 +0800] [28603] [INFO] Using worker: sync
+[2018-05-31 01:03:49 +0800] [28606] [INFO] Booting worker with pid: 28606
+[2018-05-31 01:03:49 +0800] [28607] [INFO] Booting worker with pid: 28607
+[2018-05-31 01:03:49 +0800] [28608] [INFO] Booting worker with pid: 28608
+[2018-05-31 01:03:49 +0800] [28610] [INFO] Booting worker with pid: 28610
+[2018-05-31 01:03:49 +0800] [28611] [INFO] Booting worker with pid: 28611
+[2018-05-31 01:03:53 +0800] [28611] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str,"BIG5" ))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'big5' codec can't encode character '\xe6' in position 140: illegal multibyte sequence
+[2018-05-31 01:04:33 +0800] [28611] [ERROR] Error handling request /downloadfile/?filename=cxw/2018%E5%B9%B4%E6%B2%83%E6%B4%BE%E4%BA%A7%E5%93%81%E6%9A%91%E6%9C%9F%E6%8B%A6%E6%88%AA%E5%AE%A3%E4%BC%A0%E6%96%B9%E6%A1%88-%E9%B8%BF%E6%99%96-0524.pptx
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str,"BIG5" ))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'big5' codec can't encode character '\xe5' in position 148: illegal multibyte sequence
+[2018-05-31 01:05:07 +0800] [28603] [CRITICAL] WORKER TIMEOUT (pid:28606)
+[2018-05-31 01:05:07 +0800] [28603] [CRITICAL] WORKER TIMEOUT (pid:28607)
+[2018-05-31 01:05:07 +0800] [28606] [INFO] Worker exiting (pid: 28606)
+[2018-05-31 01:05:07 +0800] [28607] [INFO] Worker exiting (pid: 28607)
+(('cxw', 'v5iQ0c2dLPxbWNpyqgsC3lSnhYuIXmR8Ve4TkZtEoF9wjD671M'),)
+/cxw
+/home/c/python/git/file_sharing
+['2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '校园市场启动会林总讲话稿.docx', '2018年校园市场启动会材料（上会稿）.pptx']
+/home/c/python/git/file_sharing
+(['校园市场启动会林总讲话稿.docx', '2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '2018年校园市场启动会材料（上会稿）.pptx'], ['.docx', '.pptx', '.pptx'])
+[2018-05-31 01:05:07 +0800] [28745] [INFO] Booting worker with pid: 28745
+[2018-05-31 01:05:07 +0800] [28747] [INFO] Booting worker with pid: 28747
+[2018-05-31 01:05:27 +0800] [28603] [INFO] Handling signal: term
+[2018-05-31 01:05:27 +0800] [28611] [INFO] Worker exiting (pid: 28611)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 01:05:27 +0800] [28610] [INFO] Worker exiting (pid: 28610)
+[2018-05-31 01:05:27 +0800] [28747] [INFO] Worker exiting (pid: 28747)
+[2018-05-31 01:05:27 +0800] [28608] [INFO] Worker exiting (pid: 28608)
+[2018-05-31 01:05:27 +0800] [28745] [INFO] Worker exiting (pid: 28745)
+[2018-05-31 01:05:27 +0800] [28603] [INFO] Shutting down: Master
+[2018-05-31 01:05:46 +0800] [28827] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 01:05:46 +0800] [28827] [INFO] Listening at: http://0.0.0.0:5003 (28827)
+[2018-05-31 01:05:46 +0800] [28827] [INFO] Using worker: sync
+[2018-05-31 01:05:46 +0800] [28831] [INFO] Booting worker with pid: 28831
+[2018-05-31 01:05:46 +0800] [28832] [INFO] Booting worker with pid: 28832
+[2018-05-31 01:05:46 +0800] [28835] [INFO] Booting worker with pid: 28835
+[2018-05-31 01:05:46 +0800] [28836] [INFO] Booting worker with pid: 28836
+[2018-05-31 01:05:46 +0800] [28837] [INFO] Booting worker with pid: 28837
+[2018-05-31 01:05:54 +0800] [28831] [ERROR] Error handling request /login
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "uft-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:05:54 +0800] [28832] [ERROR] Error handling request /favicon.ico
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "uft-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:05:57 +0800] [28837] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "uft-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:05:57 +0800] [28835] [ERROR] Error handling request /favicon.ico
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "uft-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:06:27 +0800] [28827] [CRITICAL] WORKER TIMEOUT (pid:28836)
+[2018-05-31 01:06:27 +0800] [28827] [CRITICAL] WORKER TIMEOUT (pid:28831)
+[2018-05-31 01:06:27 +0800] [28836] [INFO] Worker exiting (pid: 28836)
+[2018-05-31 01:06:27 +0800] [28831] [INFO] Worker exiting (pid: 28831)
+()
+[2018-05-31 01:06:27 +0800] [29610] [INFO] Booting worker with pid: 29610
+[2018-05-31 01:06:27 +0800] [29611] [INFO] Booting worker with pid: 29611
+[2018-05-31 01:06:42 +0800] [28835] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "utf-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:06:42 +0800] [28837] [ERROR] Error handling request /favicon.ico
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "utf-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:06:43 +0800] [29610] [ERROR] Error handling request /
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "utf-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:06:43 +0800] [28835] [ERROR] Error handling request /favicon.ico
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 182, in handle_request
+    resp.write(item)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 341, in write
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "utf-8"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+LookupError: unknown encoding: uft-8
+[2018-05-31 01:06:45 +0800] [28827] [INFO] Handling signal: term
+[2018-05-31 01:06:45 +0800] [28832] [INFO] Worker exiting (pid: 28832)
+[2018-05-31 01:06:45 +0800] [28835] [INFO] Worker exiting (pid: 28835)
+()
+[2018-05-31 01:06:45 +0800] [28837] [INFO] Worker exiting (pid: 28837)
+()
+[2018-05-31 01:06:45 +0800] [29611] [INFO] Worker exiting (pid: 29611)
+[2018-05-31 01:06:45 +0800] [29610] [INFO] Worker exiting (pid: 29610)
+()
+[2018-05-31 01:06:45 +0800] [28827] [INFO] Shutting down: Master
+[2018-05-31 01:06:47 +0800] [29664] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 01:06:47 +0800] [29664] [INFO] Listening at: http://0.0.0.0:5003 (29664)
+[2018-05-31 01:06:47 +0800] [29664] [INFO] Using worker: sync
+[2018-05-31 01:06:47 +0800] [29681] [INFO] Booting worker with pid: 29681
+[2018-05-31 01:06:47 +0800] [29682] [INFO] Booting worker with pid: 29682
+[2018-05-31 01:06:47 +0800] [29689] [INFO] Booting worker with pid: 29689
+[2018-05-31 01:06:47 +0800] [29690] [INFO] Booting worker with pid: 29690
+[2018-05-31 01:06:48 +0800] [29691] [INFO] Booting worker with pid: 29691
+[2018-05-31 19:57:36 +0800] [10394] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 19:57:36 +0800] [10394] [INFO] Listening at: http://0.0.0.0:5003 (10394)
+[2018-05-31 19:57:36 +0800] [10394] [INFO] Using worker: sync
+[2018-05-31 19:57:36 +0800] [10398] [INFO] Booting worker with pid: 10398
+[2018-05-31 19:57:36 +0800] [10399] [INFO] Booting worker with pid: 10399
+[2018-05-31 19:57:36 +0800] [10400] [INFO] Booting worker with pid: 10400
+[2018-05-31 19:57:36 +0800] [10403] [INFO] Booting worker with pid: 10403
+[2018-05-31 19:57:36 +0800] [10404] [INFO] Booting worker with pid: 10404
+[2018-05-31 20:00:25 +0800] [10394] [INFO] Handling signal: term
+[2018-05-31 20:00:25 +0800] [10404] [INFO] Worker exiting (pid: 10404)
+()
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['新建文', 'lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '', '.xls'])
+[2018-05-31 20:00:25 +0800] [10399] [INFO] Worker exiting (pid: 10399)
+()
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 20:00:25 +0800] [10403] [INFO] Worker exiting (pid: 10403)
+[2018-05-31 20:00:25 +0800] [10398] [INFO] Worker exiting (pid: 10398)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 20:00:25 +0800] [10400] [INFO] Worker exiting (pid: 10400)
+[2018-05-31 20:00:25 +0800] [10394] [INFO] Shutting down: Master
+[2018-05-31 20:00:28 +0800] [11682] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:00:28 +0800] [11682] [INFO] Listening at: http://0.0.0.0:5003 (11682)
+[2018-05-31 20:00:28 +0800] [11682] [INFO] Using worker: sync
+[2018-05-31 20:00:28 +0800] [11685] [INFO] Booting worker with pid: 11685
+[2018-05-31 20:00:28 +0800] [11686] [INFO] Booting worker with pid: 11686
+[2018-05-31 20:00:28 +0800] [11688] [INFO] Booting worker with pid: 11688
+[2018-05-31 20:00:28 +0800] [11690] [INFO] Booting worker with pid: 11690
+[2018-05-31 20:00:28 +0800] [11691] [INFO] Booting worker with pid: 11691
+[2018-05-31 20:00:31 +0800] [11688] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 411, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 390, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 337, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 20:09:11 +0800] [11682] [INFO] Handling signal: term
+[2018-05-31 20:09:11 +0800] [11688] [INFO] Worker exiting (pid: 11688)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 12:00:31 GMT
+Connection: close
+Content-Disposition: attachment; filename=æ°å»ºExcelææ¡£.xls
+Content-Length: 7168
+Content-Type: application/vnd.ms-excel
+Last-Modified: Wed, 30 May 2018 03:46:59 GMT
+Cache-Control: public, max-age=43200
+Expires: Fri, 01 Jun 2018 00:00:31 GMT
+ETag: "1527652019.907862-7168-1204690037"
+Accept-Ranges: bytes
+
+
+[2018-05-31 20:09:11 +0800] [11690] [INFO] Worker exiting (pid: 11690)
+[2018-05-31 20:09:11 +0800] [11685] [INFO] Worker exiting (pid: 11685)
+[2018-05-31 20:09:11 +0800] [11691] [INFO] Worker exiting (pid: 11691)
+[2018-05-31 20:09:11 +0800] [11686] [INFO] Worker exiting (pid: 11686)
+[2018-05-31 20:09:11 +0800] [11682] [INFO] Shutting down: Master
+[2018-05-31 20:09:14 +0800] [12620] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:09:14 +0800] [12620] [INFO] Listening at: http://0.0.0.0:5003 (12620)
+[2018-05-31 20:09:14 +0800] [12620] [INFO] Using worker: sync
+[2018-05-31 20:09:14 +0800] [12623] [INFO] Booting worker with pid: 12623
+[2018-05-31 20:09:14 +0800] [12624] [INFO] Booting worker with pid: 12624
+[2018-05-31 20:09:14 +0800] [12626] [INFO] Booting worker with pid: 12626
+[2018-05-31 20:09:14 +0800] [12627] [INFO] Booting worker with pid: 12627
+[2018-05-31 20:09:14 +0800] [12629] [INFO] Booting worker with pid: 12629
+[2018-05-31 20:09:17 +0800] [12627] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 414, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 393, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 340, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 20:09:46 +0800] [12620] [CRITICAL] WORKER TIMEOUT (pid:12624)
+[2018-05-31 20:09:46 +0800] [12620] [CRITICAL] WORKER TIMEOUT (pid:12629)
+[2018-05-31 20:09:46 +0800] [12620] [CRITICAL] WORKER TIMEOUT (pid:12623)
+[2018-05-31 20:09:46 +0800] [12629] [INFO] Worker exiting (pid: 12629)
+[2018-05-31 20:09:46 +0800] [12624] [INFO] Worker exiting (pid: 12624)
+[2018-05-31 20:09:46 +0800] [12623] [INFO] Worker exiting (pid: 12623)
+[2018-05-31 20:09:46 +0800] [12707] [INFO] Booting worker with pid: 12707
+[2018-05-31 20:09:46 +0800] [12708] [INFO] Booting worker with pid: 12708
+[2018-05-31 20:09:46 +0800] [12711] [INFO] Booting worker with pid: 12711
+[2018-05-31 20:22:54 +0800] [12620] [INFO] Handling signal: term
+[2018-05-31 20:22:54 +0800] [12626] [INFO] Worker exiting (pid: 12626)
+[2018-05-31 20:22:54 +0800] [12627] [INFO] Worker exiting (pid: 12627)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 12:09:17 GMT
+Connection: close
+Content-Disposition: attachment; filename=æ°å»ºExcelææ¡£.xls
+Content-Length: 7168
+Content-Type: application/vnd.ms-excel
+Last-Modified: Wed, 30 May 2018 03:46:59 GMT
+Cache-Control: public, max-age=43200
+Expires: Fri, 01 Jun 2018 00:09:17 GMT
+ETag: "1527652019.907862-7168-1204690037"
+Accept-Ranges: bytes
+
+
+[2018-05-31 20:22:54 +0800] [12711] [INFO] Worker exiting (pid: 12711)
+[2018-05-31 20:22:54 +0800] [12707] [INFO] Worker exiting (pid: 12707)
+[2018-05-31 20:22:54 +0800] [12708] [INFO] Worker exiting (pid: 12708)
+[2018-05-31 20:22:54 +0800] [12620] [INFO] Shutting down: Master
+[2018-05-31 20:22:57 +0800] [13963] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:22:57 +0800] [13963] [INFO] Listening at: http://0.0.0.0:5003 (13963)
+[2018-05-31 20:22:57 +0800] [13963] [INFO] Using worker: sync
+[2018-05-31 20:22:57 +0800] [13966] [INFO] Booting worker with pid: 13966
+[2018-05-31 20:22:57 +0800] [13967] [INFO] Booting worker with pid: 13967
+[2018-05-31 20:22:57 +0800] [13970] [INFO] Booting worker with pid: 13970
+[2018-05-31 20:22:57 +0800] [13971] [INFO] Booting worker with pid: 13971
+[2018-05-31 20:22:57 +0800] [13973] [INFO] Booting worker with pid: 13973
+[2018-05-31 20:22:59 +0800] [13970] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/flask/app.py", line 2299, in wsgi_app
+    return response(environ, start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/werkzeug/wrappers.py", line 1326, in __call__
+    start_response(status, headers)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 261, in start_response
+    self.process_headers(headers)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 293, in process_headers
+    file.write(self.headers)
+TypeError: write() argument must be str, not list
+[2018-05-31 20:23:29 +0800] [13963] [CRITICAL] WORKER TIMEOUT (pid:13971)
+[2018-05-31 20:23:29 +0800] [13963] [CRITICAL] WORKER TIMEOUT (pid:13967)
+[2018-05-31 20:23:29 +0800] [13971] [INFO] Worker exiting (pid: 13971)
+[2018-05-31 20:23:29 +0800] [13967] [INFO] Worker exiting (pid: 13967)
+[2018-05-31 20:23:29 +0800] [14063] [INFO] Booting worker with pid: 14063
+[2018-05-31 20:23:29 +0800] [14064] [INFO] Booting worker with pid: 14064
+[2018-05-31 20:23:56 +0800] [13963] [INFO] Handling signal: term
+[2018-05-31 20:23:56 +0800] [13970] [INFO] Worker exiting (pid: 13970)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 20:23:56 +0800] [13966] [INFO] Worker exiting (pid: 13966)
+[2018-05-31 20:23:56 +0800] [13973] [INFO] Worker exiting (pid: 13973)
+[2018-05-31 20:23:56 +0800] [14064] [INFO] Worker exiting (pid: 14064)
+[2018-05-31 20:23:56 +0800] [14063] [INFO] Worker exiting (pid: 14063)
+[2018-05-31 20:23:56 +0800] [13963] [INFO] Shutting down: Master
+[2018-05-31 20:23:58 +0800] [14125] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:23:58 +0800] [14125] [INFO] Listening at: http://0.0.0.0:5003 (14125)
+[2018-05-31 20:23:58 +0800] [14125] [INFO] Using worker: sync
+[2018-05-31 20:23:58 +0800] [14128] [INFO] Booting worker with pid: 14128
+[2018-05-31 20:23:59 +0800] [14130] [INFO] Booting worker with pid: 14130
+[2018-05-31 20:23:59 +0800] [14131] [INFO] Booting worker with pid: 14131
+[2018-05-31 20:23:59 +0800] [14132] [INFO] Booting worker with pid: 14132
+[2018-05-31 20:23:59 +0800] [14133] [INFO] Booting worker with pid: 14133
+[2018-05-31 20:24:01 +0800] [14130] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 414, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 393, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 340, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 20:24:31 +0800] [14125] [CRITICAL] WORKER TIMEOUT (pid:14128)
+[2018-05-31 20:24:31 +0800] [14125] [CRITICAL] WORKER TIMEOUT (pid:14133)
+[2018-05-31 20:24:31 +0800] [14128] [INFO] Worker exiting (pid: 14128)
+[2018-05-31 20:24:31 +0800] [14133] [INFO] Worker exiting (pid: 14133)
+[2018-05-31 20:24:31 +0800] [14230] [INFO] Booting worker with pid: 14230
+[2018-05-31 20:24:31 +0800] [14231] [INFO] Booting worker with pid: 14231
+[2018-05-31 20:26:16 +0800] [14125] [INFO] Handling signal: term
+[2018-05-31 20:26:16 +0800] [14130] [INFO] Worker exiting (pid: 14130)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 12:24:01 GMT
+Connection: close
+Content-Disposition: attachment; filename=æ°å»ºExcelææ¡£.xls
+Content-Length: 7168
+Content-Type: application/vnd.ms-excel
+Last-Modified: Wed, 30 May 2018 03:46:59 GMT
+Cache-Control: public, max-age=43200
+Expires: Fri, 01 Jun 2018 00:24:01 GMT
+ETag: "1527652019.907862-7168-1204690037"
+Accept-Ranges: bytes
+
+
+[2018-05-31 20:26:16 +0800] [14132] [INFO] Worker exiting (pid: 14132)
+[2018-05-31 20:26:16 +0800] [14230] [INFO] Worker exiting (pid: 14230)
+[2018-05-31 20:26:16 +0800] [14231] [INFO] Worker exiting (pid: 14231)
+[2018-05-31 20:26:16 +0800] [14131] [INFO] Worker exiting (pid: 14131)
+[2018-05-31 20:26:16 +0800] [14125] [INFO] Shutting down: Master
+[2018-05-31 20:26:19 +0800] [14459] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:26:19 +0800] [14459] [INFO] Listening at: http://0.0.0.0:5003 (14459)
+[2018-05-31 20:26:19 +0800] [14459] [INFO] Using worker: sync
+[2018-05-31 20:26:19 +0800] [14463] [INFO] Booting worker with pid: 14463
+[2018-05-31 20:26:19 +0800] [14464] [INFO] Booting worker with pid: 14464
+[2018-05-31 20:26:19 +0800] [14466] [INFO] Booting worker with pid: 14466
+[2018-05-31 20:26:19 +0800] [14468] [INFO] Booting worker with pid: 14468
+[2018-05-31 20:26:19 +0800] [14469] [INFO] Booting worker with pid: 14469
+[2018-05-31 20:26:22 +0800] [14466] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 176, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/flask/app.py", line 2299, in wsgi_app
+    return response(environ, start_response)
+  File "/home/c/.local/lib/python3.5/site-packages/werkzeug/wrappers.py", line 1326, in __call__
+    start_response(status, headers)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 261, in start_response
+    self.process_headers(headers)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 298, in process_headers
+    file.write(vals)
+TypeError: write() argument must be str, not list
+[2018-05-31 20:26:51 +0800] [14459] [CRITICAL] WORKER TIMEOUT (pid:14469)
+[2018-05-31 20:26:51 +0800] [14469] [INFO] Worker exiting (pid: 14469)
+[2018-05-31 20:26:51 +0800] [14547] [INFO] Booting worker with pid: 14547
+[2018-05-31 20:28:28 +0800] [14459] [INFO] Handling signal: term
+[2018-05-31 20:28:28 +0800] [14464] [INFO] Worker exiting (pid: 14464)
+[2018-05-31 20:28:28 +0800] [14466] [INFO] Worker exiting (pid: 14466)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+[2018-05-31 20:28:28 +0800] [14463] [INFO] Worker exiting (pid: 14463)
+[2018-05-31 20:28:28 +0800] [14547] [INFO] Worker exiting (pid: 14547)
+[2018-05-31 20:28:28 +0800] [14468] [INFO] Worker exiting (pid: 14468)
+[2018-05-31 20:28:28 +0800] [14459] [INFO] Shutting down: Master
+[2018-05-31 20:28:31 +0800] [14737] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:28:31 +0800] [14737] [INFO] Listening at: http://0.0.0.0:5003 (14737)
+[2018-05-31 20:28:31 +0800] [14737] [INFO] Using worker: sync
+[2018-05-31 20:28:31 +0800] [14740] [INFO] Booting worker with pid: 14740
+[2018-05-31 20:28:31 +0800] [14742] [INFO] Booting worker with pid: 14742
+[2018-05-31 20:28:31 +0800] [14743] [INFO] Booting worker with pid: 14743
+[2018-05-31 20:28:31 +0800] [14745] [INFO] Booting worker with pid: 14745
+[2018-05-31 20:28:31 +0800] [14747] [INFO] Booting worker with pid: 14747
+[2018-05-31 20:28:33 +0800] [14742] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 179, in handle_request
+    resp.write_file(respiter)
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 419, in write_file
+    if not self.sendfile(respiter):
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 398, in sendfile
+    self.send_headers()
+  File "/usr/lib/python3/dist-packages/gunicorn/http/wsgi.py", line 345, in send_headers
+    util.write(self.sock, util.to_bytestring(header_str, "ascii"))
+  File "/usr/lib/python3/dist-packages/gunicorn/util.py", line 534, in to_bytestring
+    return value.encode(encoding)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 140-145: ordinal not in range(128)
+[2018-05-31 20:39:59 +0800] [14737] [INFO] Handling signal: term
+[2018-05-31 20:39:59 +0800] [14745] [INFO] Worker exiting (pid: 14745)
+[2018-05-31 20:39:59 +0800] [14747] [INFO] Worker exiting (pid: 14747)
+[2018-05-31 20:39:59 +0800] [14740] [INFO] Worker exiting (pid: 14740)
+[2018-05-31 20:39:59 +0800] [14742] [INFO] Worker exiting (pid: 14742)
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 12:28:33 GMT
+Connection: close
+Content-Disposition: attachment; filename=æ°å»ºExcelææ¡£.xls
+Content-Length: 7168
+Content-Type: application/vnd.ms-excel
+Last-Modified: Wed, 30 May 2018 03:46:59 GMT
+Cache-Control: max-age=43200, public
+Expires: Fri, 01 Jun 2018 00:28:33 GMT
+ETag: "1527652019.907862-7168-1204690037"
+Accept-Ranges: bytes
+
+
+[2018-05-31 20:39:59 +0800] [14743] [INFO] Worker exiting (pid: 14743)
+[2018-05-31 20:39:59 +0800] [14737] [INFO] Shutting down: Master
+[2018-05-31 20:40:01 +0800] [15954] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:40:01 +0800] [15954] [INFO] Listening at: http://0.0.0.0:5003 (15954)
+[2018-05-31 20:40:01 +0800] [15954] [INFO] Using worker: sync
+[2018-05-31 20:40:01 +0800] [15957] [INFO] Booting worker with pid: 15957
+[2018-05-31 20:40:01 +0800] [15959] [INFO] Booting worker with pid: 15959
+[2018-05-31 20:40:01 +0800] [15961] [INFO] Booting worker with pid: 15961
+[2018-05-31 20:40:01 +0800] [15962] [INFO] Booting worker with pid: 15962
+[2018-05-31 20:40:01 +0800] [15964] [INFO] Booting worker with pid: 15964
+[2018-05-31 20:40:03 +0800] [15957] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(type(eviron))
+AttributeError: 'tuple' object has no attribute 'write'
+[2018-05-31 20:40:09 +0800] [15954] [INFO] Handling signal: term
+[2018-05-31 20:40:09 +0800] [15957] [INFO] Worker exiting (pid: 15957)
+[2018-05-31 20:40:09 +0800] [15962] [INFO] Worker exiting (pid: 15962)
+[2018-05-31 20:40:09 +0800] [15961] [INFO] Worker exiting (pid: 15961)
+[2018-05-31 20:40:09 +0800] [15964] [INFO] Worker exiting (pid: 15964)
+[2018-05-31 20:40:09 +0800] [15959] [INFO] Worker exiting (pid: 15959)
+[2018-05-31 20:40:10 +0800] [15954] [INFO] Shutting down: Master
+[2018-05-31 20:41:51 +0800] [16175] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:41:51 +0800] [16175] [INFO] Listening at: http://0.0.0.0:5003 (16175)
+[2018-05-31 20:41:51 +0800] [16175] [INFO] Using worker: sync
+[2018-05-31 20:41:51 +0800] [16178] [INFO] Booting worker with pid: 16178
+[2018-05-31 20:41:51 +0800] [16179] [INFO] Booting worker with pid: 16179
+[2018-05-31 20:41:51 +0800] [16180] [INFO] Booting worker with pid: 16180
+[2018-05-31 20:41:51 +0800] [16183] [INFO] Booting worker with pid: 16183
+[2018-05-31 20:41:51 +0800] [16184] [INFO] Booting worker with pid: 16184
+[2018-05-31 20:41:55 +0800] [16180] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.writelines(eviron)
+AttributeError: 'tuple' object has no attribute 'writelines'
+[2018-05-31 20:43:23 +0800] [16175] [INFO] Handling signal: term
+[2018-05-31 20:43:23 +0800] [16184] [INFO] Worker exiting (pid: 16184)
+[2018-05-31 20:43:23 +0800] [16179] [INFO] Worker exiting (pid: 16179)
+[2018-05-31 20:43:23 +0800] [16178] [INFO] Worker exiting (pid: 16178)
+[2018-05-31 20:43:23 +0800] [16180] [INFO] Worker exiting (pid: 16180)
+[2018-05-31 20:43:23 +0800] [16183] [INFO] Worker exiting (pid: 16183)
+[2018-05-31 20:43:23 +0800] [16175] [INFO] Shutting down: Master
+[2018-05-31 20:43:25 +0800] [16432] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:43:25 +0800] [16432] [INFO] Listening at: http://0.0.0.0:5003 (16432)
+[2018-05-31 20:43:25 +0800] [16432] [INFO] Using worker: sync
+[2018-05-31 20:43:25 +0800] [16435] [INFO] Booting worker with pid: 16435
+[2018-05-31 20:43:25 +0800] [16436] [INFO] Booting worker with pid: 16436
+[2018-05-31 20:43:26 +0800] [16438] [INFO] Booting worker with pid: 16438
+[2018-05-31 20:43:26 +0800] [16439] [INFO] Booting worker with pid: 16439
+[2018-05-31 20:43:26 +0800] [16442] [INFO] Booting worker with pid: 16442
+[2018-05-31 20:43:27 +0800] [16436] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.writelines(list(eviron))
+AttributeError: 'tuple' object has no attribute 'writelines'
+[2018-05-31 20:44:08 +0800] [16432] [INFO] Handling signal: term
+[2018-05-31 20:44:08 +0800] [16442] [INFO] Worker exiting (pid: 16442)
+[2018-05-31 20:44:08 +0800] [16438] [INFO] Worker exiting (pid: 16438)
+[2018-05-31 20:44:08 +0800] [16435] [INFO] Worker exiting (pid: 16435)
+[2018-05-31 20:44:08 +0800] [16439] [INFO] Worker exiting (pid: 16439)
+[2018-05-31 20:44:08 +0800] [16436] [INFO] Worker exiting (pid: 16436)
+[2018-05-31 20:44:08 +0800] [16432] [INFO] Shutting down: Master
+[2018-05-31 20:44:11 +0800] [16550] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:44:11 +0800] [16550] [INFO] Listening at: http://0.0.0.0:5003 (16550)
+[2018-05-31 20:44:11 +0800] [16550] [INFO] Using worker: sync
+[2018-05-31 20:44:11 +0800] [16555] [INFO] Booting worker with pid: 16555
+[2018-05-31 20:44:11 +0800] [16558] [INFO] Booting worker with pid: 16558
+[2018-05-31 20:44:11 +0800] [16560] [INFO] Booting worker with pid: 16560
+[2018-05-31 20:44:11 +0800] [16561] [INFO] Booting worker with pid: 16561
+[2018-05-31 20:44:11 +0800] [16563] [INFO] Booting worker with pid: 16563
+[2018-05-31 20:44:12 +0800] [16555] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(type(eviron))
+NameError: name 'eviron' is not defined
+[2018-05-31 20:44:42 +0800] [16550] [INFO] Handling signal: term
+[2018-05-31 20:44:42 +0800] [16555] [INFO] Worker exiting (pid: 16555)
+[2018-05-31 20:44:42 +0800] [16560] [INFO] Worker exiting (pid: 16560)
+[2018-05-31 20:44:42 +0800] [16558] [INFO] Worker exiting (pid: 16558)
+[2018-05-31 20:44:42 +0800] [16561] [INFO] Worker exiting (pid: 16561)
+[2018-05-31 20:44:42 +0800] [16563] [INFO] Worker exiting (pid: 16563)
+[2018-05-31 20:44:43 +0800] [16550] [INFO] Shutting down: Master
+[2018-05-31 20:44:45 +0800] [16668] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:44:45 +0800] [16668] [INFO] Listening at: http://0.0.0.0:5003 (16668)
+[2018-05-31 20:44:45 +0800] [16668] [INFO] Using worker: sync
+[2018-05-31 20:44:45 +0800] [16672] [INFO] Booting worker with pid: 16672
+[2018-05-31 20:44:46 +0800] [16673] [INFO] Booting worker with pid: 16673
+[2018-05-31 20:44:46 +0800] [16674] [INFO] Booting worker with pid: 16674
+[2018-05-31 20:44:46 +0800] [16675] [INFO] Booting worker with pid: 16675
+[2018-05-31 20:44:46 +0800] [16677] [INFO] Booting worker with pid: 16677
+[2018-05-31 20:44:51 +0800] [16668] [INFO] Handling signal: term
+[2018-05-31 20:44:51 +0800] [16673] [INFO] Worker exiting (pid: 16673)
+[2018-05-31 20:44:51 +0800] [16672] [INFO] Worker exiting (pid: 16672)
+[2018-05-31 20:44:51 +0800] [16674] [INFO] Worker exiting (pid: 16674)
+[2018-05-31 20:44:51 +0800] [16677] [INFO] Worker exiting (pid: 16677)
+[2018-05-31 20:44:51 +0800] [16675] [INFO] Worker exiting (pid: 16675)
+[2018-05-31 20:44:52 +0800] [16668] [INFO] Shutting down: Master
+[2018-05-31 20:45:05 +0800] [16736] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:45:05 +0800] [16736] [INFO] Listening at: http://0.0.0.0:5003 (16736)
+[2018-05-31 20:45:05 +0800] [16736] [INFO] Using worker: sync
+[2018-05-31 20:45:05 +0800] [16744] [INFO] Booting worker with pid: 16744
+[2018-05-31 20:45:05 +0800] [16745] [INFO] Booting worker with pid: 16745
+[2018-05-31 20:45:05 +0800] [16747] [INFO] Booting worker with pid: 16747
+[2018-05-31 20:45:05 +0800] [16748] [INFO] Booting worker with pid: 16748
+[2018-05-31 20:45:05 +0800] [16750] [INFO] Booting worker with pid: 16750
+[2018-05-31 20:45:10 +0800] [16745] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(environ)
+TypeError: write() argument must be str, not dict
+[2018-05-31 20:47:05 +0800] [16736] [INFO] Handling signal: term
+[2018-05-31 20:47:05 +0800] [16745] [INFO] Worker exiting (pid: 16745)
+[2018-05-31 20:47:05 +0800] [16744] [INFO] Worker exiting (pid: 16744)
+[2018-05-31 20:47:05 +0800] [16747] [INFO] Worker exiting (pid: 16747)
+[2018-05-31 20:47:05 +0800] [16748] [INFO] Worker exiting (pid: 16748)
+[2018-05-31 20:47:05 +0800] [16750] [INFO] Worker exiting (pid: 16750)
+[2018-05-31 20:47:05 +0800] [16736] [INFO] Shutting down: Master
+[2018-05-31 20:47:07 +0800] [16994] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:47:07 +0800] [16994] [INFO] Listening at: http://0.0.0.0:5003 (16994)
+[2018-05-31 20:47:07 +0800] [16994] [INFO] Using worker: sync
+[2018-05-31 20:47:07 +0800] [16997] [INFO] Booting worker with pid: 16997
+[2018-05-31 20:47:07 +0800] [16998] [INFO] Booting worker with pid: 16998
+[2018-05-31 20:47:07 +0800] [16999] [INFO] Booting worker with pid: 16999
+[2018-05-31 20:47:07 +0800] [17001] [INFO] Booting worker with pid: 17001
+[2018-05-31 20:47:07 +0800] [17003] [INFO] Booting worker with pid: 17003
+[2018-05-31 20:47:11 +0800] [16997] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(list(environ.values))
+TypeError: 'builtin_function_or_method' object is not iterable
+[2018-05-31 20:48:08 +0800] [16994] [INFO] Handling signal: term
+[2018-05-31 20:48:08 +0800] [17001] [INFO] Worker exiting (pid: 17001)
+[2018-05-31 20:48:08 +0800] [17003] [INFO] Worker exiting (pid: 17003)
+[2018-05-31 20:48:08 +0800] [16997] [INFO] Worker exiting (pid: 16997)
+[2018-05-31 20:48:08 +0800] [16999] [INFO] Worker exiting (pid: 16999)
+[2018-05-31 20:48:08 +0800] [16998] [INFO] Worker exiting (pid: 16998)
+[2018-05-31 20:48:09 +0800] [16994] [INFO] Shutting down: Master
+[2018-05-31 20:48:11 +0800] [17138] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:48:11 +0800] [17138] [INFO] Listening at: http://0.0.0.0:5003 (17138)
+[2018-05-31 20:48:11 +0800] [17138] [INFO] Using worker: sync
+[2018-05-31 20:48:11 +0800] [17142] [INFO] Booting worker with pid: 17142
+[2018-05-31 20:48:11 +0800] [17144] [INFO] Booting worker with pid: 17144
+[2018-05-31 20:48:11 +0800] [17145] [INFO] Booting worker with pid: 17145
+[2018-05-31 20:48:11 +0800] [17146] [INFO] Booting worker with pid: 17146
+[2018-05-31 20:48:11 +0800] [17147] [INFO] Booting worker with pid: 17147
+[2018-05-31 20:48:16 +0800] [17144] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(list(environ.values()))
+TypeError: write() argument must be str, not list
+[2018-05-31 20:48:30 +0800] [17138] [INFO] Handling signal: term
+[2018-05-31 20:48:30 +0800] [17147] [INFO] Worker exiting (pid: 17147)
+[2018-05-31 20:48:30 +0800] [17144] [INFO] Worker exiting (pid: 17144)
+[2018-05-31 20:48:30 +0800] [17145] [INFO] Worker exiting (pid: 17145)
+[2018-05-31 20:48:30 +0800] [17146] [INFO] Worker exiting (pid: 17146)
+[2018-05-31 20:48:30 +0800] [17142] [INFO] Worker exiting (pid: 17142)
+[2018-05-31 20:48:30 +0800] [17138] [INFO] Shutting down: Master
+[2018-05-31 20:48:33 +0800] [17216] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:48:33 +0800] [17216] [INFO] Listening at: http://0.0.0.0:5003 (17216)
+[2018-05-31 20:48:33 +0800] [17216] [INFO] Using worker: sync
+[2018-05-31 20:48:33 +0800] [17219] [INFO] Booting worker with pid: 17219
+[2018-05-31 20:48:33 +0800] [17220] [INFO] Booting worker with pid: 17220
+[2018-05-31 20:48:33 +0800] [17221] [INFO] Booting worker with pid: 17221
+[2018-05-31 20:48:33 +0800] [17223] [INFO] Booting worker with pid: 17223
+[2018-05-31 20:48:33 +0800] [17224] [INFO] Booting worker with pid: 17224
+[2018-05-31 20:48:34 +0800] [17219] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.writelines(list(environ.values()))
+TypeError: write() argument must be str, not socket
+[2018-05-31 20:49:38 +0800] [17216] [INFO] Handling signal: term
+[2018-05-31 20:49:38 +0800] [17219] [INFO] Worker exiting (pid: 17219)
+[2018-05-31 20:49:38 +0800] [17224] [INFO] Worker exiting (pid: 17224)
+[2018-05-31 20:49:38 +0800] [17220] [INFO] Worker exiting (pid: 17220)
+[2018-05-31 20:49:38 +0800] [17221] [INFO] Worker exiting (pid: 17221)
+[2018-05-31 20:49:38 +0800] [17223] [INFO] Worker exiting (pid: 17223)
+[2018-05-31 20:49:38 +0800] [17216] [INFO] Shutting down: Master
+[2018-05-31 20:49:40 +0800] [17357] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:49:40 +0800] [17357] [INFO] Listening at: http://0.0.0.0:5003 (17357)
+[2018-05-31 20:49:40 +0800] [17357] [INFO] Using worker: sync
+[2018-05-31 20:49:40 +0800] [17360] [INFO] Booting worker with pid: 17360
+[2018-05-31 20:49:41 +0800] [17361] [INFO] Booting worker with pid: 17361
+[2018-05-31 20:49:41 +0800] [17363] [INFO] Booting worker with pid: 17363
+[2018-05-31 20:49:41 +0800] [17365] [INFO] Booting worker with pid: 17365
+[2018-05-31 20:49:41 +0800] [17367] [INFO] Booting worker with pid: 17367
+[2018-05-31 20:49:45 +0800] [17361] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 135, in handle
+    self.handle_request(listener, req, client, addr)
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 169, in handle_request
+    file.write(listener.getsockname())
+TypeError: write() argument must be str, not tuple
+[2018-05-31 20:59:40 +0800] [17357] [INFO] Handling signal: term
+[2018-05-31 20:59:40 +0800] [17360] [INFO] Worker exiting (pid: 17360)
+[2018-05-31 20:59:40 +0800] [17361] [INFO] Worker exiting (pid: 17361)
+[2018-05-31 20:59:40 +0800] [17363] [INFO] Worker exiting (pid: 17363)
+[2018-05-31 20:59:40 +0800] [17365] [INFO] Worker exiting (pid: 17365)
+[2018-05-31 20:59:40 +0800] [17367] [INFO] Worker exiting (pid: 17367)
+[2018-05-31 20:59:40 +0800] [17357] [INFO] Shutting down: Master
+[2018-05-31 20:59:42 +0800] [18419] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 20:59:42 +0800] [18419] [INFO] Listening at: http://0.0.0.0:5003 (18419)
+[2018-05-31 20:59:42 +0800] [18419] [INFO] Using worker: sync
+[2018-05-31 20:59:42 +0800] [18423] [INFO] Booting worker with pid: 18423
+[2018-05-31 20:59:42 +0800] [18424] [INFO] Booting worker with pid: 18424
+[2018-05-31 20:59:43 +0800] [18425] [INFO] Booting worker with pid: 18425
+[2018-05-31 20:59:43 +0800] [18428] [INFO] Booting worker with pid: 18428
+[2018-05-31 20:59:43 +0800] [18429] [INFO] Booting worker with pid: 18429
+[2018-05-31 20:59:45 +0800] [18429] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 136, in handle
+    file.write(listener)
+TypeError: write() argument must be str, not TCPSocket
+[2018-05-31 21:00:15 +0800] [18419] [CRITICAL] WORKER TIMEOUT (pid:18425)
+[2018-05-31 21:00:15 +0800] [18425] [INFO] Worker exiting (pid: 18425)
+[2018-05-31 21:00:15 +0800] [18513] [INFO] Booting worker with pid: 18513
+[2018-05-31 21:05:25 +0800] [18419] [INFO] Handling signal: term
+[2018-05-31 21:05:25 +0800] [18424] [INFO] Worker exiting (pid: 18424)
+[2018-05-31 21:05:25 +0800] [18429] [INFO] Worker exiting (pid: 18429)
+[2018-05-31 21:05:25 +0800] [18513] [INFO] Worker exiting (pid: 18513)
+[2018-05-31 21:05:25 +0800] [18428] [INFO] Worker exiting (pid: 18428)
+[2018-05-31 21:05:25 +0800] [18423] [INFO] Worker exiting (pid: 18423)
+[2018-05-31 21:05:25 +0800] [18419] [INFO] Shutting down: Master
+[2018-05-31 21:05:28 +0800] [19060] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 21:05:28 +0800] [19060] [INFO] Listening at: http://0.0.0.0:5003 (19060)
+[2018-05-31 21:05:28 +0800] [19060] [INFO] Using worker: sync
+[2018-05-31 21:05:28 +0800] [19063] [INFO] Booting worker with pid: 19063
+[2018-05-31 21:05:28 +0800] [19065] [INFO] Booting worker with pid: 19065
+[2018-05-31 21:05:28 +0800] [19066] [INFO] Booting worker with pid: 19066
+[2018-05-31 21:05:28 +0800] [19067] [INFO] Booting worker with pid: 19067
+[2018-05-31 21:05:28 +0800] [19068] [INFO] Booting worker with pid: 19068
+[2018-05-31 21:05:31 +0800] [19063] [ERROR] Error handling request /downloadfile/?filename=%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/gunicorn/workers/sync.py", line 136, in handle
+    file.write(listener)
+TypeError: write() argument must be str, not TCPSocket
+[2018-05-31 21:06:00 +0800] [19060] [CRITICAL] WORKER TIMEOUT (pid:19068)
+[2018-05-31 21:06:00 +0800] [19068] [INFO] Worker exiting (pid: 19068)
+[2018-05-31 21:06:00 +0800] [19152] [INFO] Booting worker with pid: 19152
+[2018-05-31 21:06:03 +0800] [19060] [INFO] Handling signal: term
+[2018-05-31 21:06:03 +0800] [19152] [INFO] Worker exiting (pid: 19152)
+[2018-05-31 21:06:03 +0800] [19063] [INFO] Worker exiting (pid: 19063)
+[2018-05-31 21:06:03 +0800] [19065] [INFO] Worker exiting (pid: 19065)
+[2018-05-31 21:06:03 +0800] [19066] [INFO] Worker exiting (pid: 19066)
+[2018-05-31 21:06:03 +0800] [19067] [INFO] Worker exiting (pid: 19067)
+[2018-05-31 21:06:04 +0800] [19060] [INFO] Shutting down: Master
+[2018-05-31 21:06:06 +0800] [19178] [INFO] Starting gunicorn 19.7.1
+[2018-05-31 21:06:06 +0800] [19178] [INFO] Listening at: http://0.0.0.0:5003 (19178)
+[2018-05-31 21:06:06 +0800] [19178] [INFO] Using worker: sync
+[2018-05-31 21:06:06 +0800] [19183] [INFO] Booting worker with pid: 19183
+[2018-05-31 21:06:06 +0800] [19185] [INFO] Booting worker with pid: 19185
+[2018-05-31 21:06:06 +0800] [19186] [INFO] Booting worker with pid: 19186
+[2018-05-31 21:06:06 +0800] [19188] [INFO] Booting worker with pid: 19188
+[2018-05-31 21:06:06 +0800] [19190] [INFO] Booting worker with pid: 19190
+[2018-05-31 21:07:28 +0800] [19178] [INFO] Handling signal: term
+[2018-05-31 21:07:28 +0800] [19185] [INFO] Worker exiting (pid: 19185)
+[2018-05-31 21:07:28 +0800] [19186] [INFO] Worker exiting (pid: 19186)
+[2018-05-31 21:07:28 +0800] [19188] [INFO] Worker exiting (pid: 19188)
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:51 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1712
+
+
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:00 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 209
+Location: http://127.0.0.1:5003/
+
+
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:18 GMT
+Connection: close
+Content-Disposition: attachment; filename=Excel.xls; filename*=UTF-8''%E6%96%B0%E5%BB%BAExcel%E6%96%87%E6%A1%A3.xls
+Content-Length: 7168
+Content-Type: application/vnd.ms-excel
+Last-Modified: Wed, 30 May 2018 03:46:59 GMT
+Cache-Control: max-age=43200, public
+Expires: Fri, 01 Jun 2018 01:06:18 GMT
+ETag: "1527652019.907862-7168-1204690037"
+Accept-Ranges: bytes
+
+
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:54 GMT
+Connection: close
+Content-Disposition: attachment; filename="2018().pptx"; filename*=UTF-8''2018%E5%B9%B4%E6%A0%A1%E5%9B%AD%E5%B8%82%E5%9C%BA%E5%90%AF%E5%8A%A8%E4%BC%9A%E6%9D%90%E6%96%99%EF%BC%88%E4%B8%8A%E4%BC%9A%E7%A8%BF%EF%BC%89.pptx
+Content-Length: 2399101
+Content-Type: application/vnd.openxmlformats-officedocument.presentationml.presentation
+Last-Modified: Wed, 30 May 2018 06:27:50 GMT
+Cache-Control: max-age=43200, public
+Expires: Fri, 01 Jun 2018 01:06:54 GMT
+ETag: "1527661670.2165806-2399101-778319172"
+Accept-Ranges: bytes
+
+
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:57 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 209
+Location: http://127.0.0.1:5003/
+
+
+HTTP/1.1 301 MOVED PERMANENTLY
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:03 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 391
+Location: http://127.0.0.1:5003/downloadfile/?filename=cq/%E6%96%B0%E5%BB%BAword%E6%96%87%E6%A1%A3.doc
+
+
+()
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:45 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 219
+Location: http://127.0.0.1:5003/login
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+/cxw
+/home/c/python/git/file_sharing
+['2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '校园市场启动会林总讲话稿.docx', '2018年校园市场启动会材料（上会稿）.pptx']
+/home/c/python/git/file_sharing
+(['校园市场启动会林总讲话稿.docx', '2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '2018年校园市场启动会材料（上会稿）.pptx'], ['.docx', '.pptx', '.pptx'])
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:52 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 2721
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:57 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 213
+Location: http://127.0.0.1:5003/up
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:57 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1712
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:00 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1712
+
+
+HTTP/1.1 301 MOVED PERMANENTLY
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:03 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 301
+Location: http://127.0.0.1:5003/downloadfile/?filename=cq
+
+
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+HTTP/1.1 301 MOVED PERMANENTLY
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:03 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 247
+Location: http://127.0.0.1:5003/userdownloadpage/cq
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+/cq
+/home/c/python/git/file_sharing
+['新建word文档.doc']
+/home/c/python/git/file_sharing
+(['新建word文档.doc'], ['.doc'])
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:03 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1594
+
+
+[2018-05-31 21:07:28 +0800] [19190] [INFO] Worker exiting (pid: 19190)
+()
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:50 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 213
+Location: http://127.0.0.1:5003/up
+Set-Cookie: name_cookie_save=MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9; Path=/
+
+
+HTTP/1.1 301 MOVED PERMANENTLY
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:50 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 257
+Location: http://127.0.0.1:5003/up/
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+HTTP/1.1 302 FOUND
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:00 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 213
+Location: http://127.0.0.1:5003/up
+
+
+
+/home/c/python/git/file_sharing
+/home/c/python/git/file_sharing
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:03 GMT
+Connection: close
+Content-Disposition: attachment; filename=word.doc; filename*=UTF-8''%E6%96%B0%E5%BB%BAword%E6%96%87%E6%A1%A3.doc
+Content-Length: 11776
+Content-Type: application/msword
+Last-Modified: Wed, 30 May 2018 03:14:49 GMT
+Cache-Control: max-age=43200, public
+Expires: Fri, 01 Jun 2018 01:07:03 GMT
+ETag: "1527650089.2705834-11776-1993809186"
+Accept-Ranges: bytes
+
+
+[2018-05-31 21:07:28 +0800] [19183] [INFO] Worker exiting (pid: 19183)
+()
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:45 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1714
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+/cxw
+/home/c/python/git/file_sharing
+['2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '校园市场启动会林总讲话稿.docx', '2018年校园市场启动会材料（上会稿）.pptx']
+/home/c/python/git/file_sharing
+(['校园市场启动会林总讲话稿.docx', '2018年沃派产品暑期拦截宣传方案-鸿晖-0524.pptx', '2018年校园市场启动会材料（上会稿）.pptx'], ['.docx', '.pptx', '.pptx'])
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:06:59 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 2721
+
+
+(('cxw', 'MWPRrCOsDhmFvLEq4o7VdUbYw3Htxg6TlB5jy1ziu0AQaNKJe9'),)
+
+/home/c/python/git/file_sharing
+['新建文', '新建Excel文档.xls', 'lwz', 'cxw', 'cq', '中文文件夹']
+/home/c/python/git/file_sharing
+(['新建文', 'lwz', 'cxw', 'cq', '中文文件夹', '新建Excel文档.xls'], ['', '', '', '', '', '.xls'])
+HTTP/1.1 200 OK
+Server: gunicorn/19.7.1
+Date: Thu, 31 May 2018 13:07:01 GMT
+Connection: close
+Content-Type: text/html; charset=utf-8
+Content-Length: 1636
+
+
+[2018-05-31 21:07:28 +0800] [19178] [INFO] Shutting down: Master

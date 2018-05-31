@@ -1,0 +1,280 @@
+2018-05-31 00:04:14,374 INFO supervisord started with pid 21852
+2018-05-31 00:04:15,380 INFO spawned: 'app_web_fun' with pid 21856
+2018-05-31 00:04:21,124 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:05:48,876 WARN received SIGINT indicating exit request
+2018-05-31 00:05:48,877 INFO waiting for app_web_fun to die
+2018-05-31 00:05:49,115 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:06:18,562 INFO supervisord started with pid 22102
+2018-05-31 00:06:19,566 INFO spawned: 'app_web_fun' with pid 22107
+2018-05-31 00:06:25,034 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:23:00,558 WARN received SIGINT indicating exit request
+2018-05-31 00:23:00,559 INFO waiting for app_web_fun to die
+2018-05-31 00:23:00,811 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:23:02,079 INFO supervisord started with pid 23816
+2018-05-31 00:23:03,082 INFO spawned: 'app_web_fun' with pid 23821
+2018-05-31 00:23:08,618 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:28:24,014 WARN received SIGINT indicating exit request
+2018-05-31 00:28:24,014 INFO waiting for app_web_fun to die
+2018-05-31 00:28:24,264 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:28:25,307 INFO supervisord started with pid 24560
+2018-05-31 00:28:26,312 INFO spawned: 'app_web_fun' with pid 24567
+2018-05-31 00:28:31,584 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:30:34,814 WARN received SIGINT indicating exit request
+2018-05-31 00:30:34,815 INFO waiting for app_web_fun to die
+2018-05-31 00:30:35,062 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:30:35,668 INFO supervisord started with pid 24838
+2018-05-31 00:30:36,672 INFO spawned: 'app_web_fun' with pid 24843
+2018-05-31 00:30:42,604 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:31:20,811 WARN received SIGINT indicating exit request
+2018-05-31 00:31:20,813 INFO waiting for app_web_fun to die
+2018-05-31 00:31:21,058 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:31:21,885 INFO supervisord started with pid 24925
+2018-05-31 00:31:22,888 INFO spawned: 'app_web_fun' with pid 24930
+2018-05-31 00:31:28,797 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:33:23,347 WARN received SIGINT indicating exit request
+2018-05-31 00:33:23,347 INFO waiting for app_web_fun to die
+2018-05-31 00:33:23,692 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:33:24,575 INFO supervisord started with pid 25142
+2018-05-31 00:33:25,578 INFO spawned: 'app_web_fun' with pid 25148
+2018-05-31 00:33:31,226 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:33:50,528 WARN received SIGINT indicating exit request
+2018-05-31 00:33:50,536 INFO waiting for app_web_fun to die
+2018-05-31 00:33:50,783 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:33:51,750 INFO supervisord started with pid 25213
+2018-05-31 00:33:52,753 INFO spawned: 'app_web_fun' with pid 25218
+2018-05-31 00:33:58,298 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:34:13,530 WARN received SIGINT indicating exit request
+2018-05-31 00:34:13,531 INFO waiting for app_web_fun to die
+2018-05-31 00:34:13,773 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:34:14,630 INFO supervisord started with pid 25263
+2018-05-31 00:34:15,634 INFO spawned: 'app_web_fun' with pid 25267
+2018-05-31 00:34:21,260 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:38:33,668 WARN received SIGINT indicating exit request
+2018-05-31 00:38:33,669 INFO waiting for app_web_fun to die
+2018-05-31 00:38:33,919 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:38:34,766 INFO supervisord started with pid 25735
+2018-05-31 00:38:35,769 INFO spawned: 'app_web_fun' with pid 25740
+2018-05-31 00:38:41,640 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:39:58,022 WARN received SIGINT indicating exit request
+2018-05-31 00:39:58,022 INFO waiting for app_web_fun to die
+2018-05-31 00:39:58,272 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:39:58,844 INFO supervisord started with pid 25880
+2018-05-31 00:39:59,847 INFO spawned: 'app_web_fun' with pid 25886
+2018-05-31 00:40:05,431 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:43:07,650 WARN received SIGINT indicating exit request
+2018-05-31 00:43:07,651 INFO waiting for app_web_fun to die
+2018-05-31 00:43:08,002 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:43:08,930 INFO supervisord started with pid 26201
+2018-05-31 00:43:09,932 INFO spawned: 'app_web_fun' with pid 26206
+2018-05-31 00:43:15,480 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:43:34,412 WARN received SIGINT indicating exit request
+2018-05-31 00:43:34,412 INFO waiting for app_web_fun to die
+2018-05-31 00:43:34,659 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:43:35,489 INFO supervisord started with pid 26264
+2018-05-31 00:43:36,492 INFO spawned: 'app_web_fun' with pid 26270
+2018-05-31 00:43:42,045 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:45:08,537 WARN received SIGINT indicating exit request
+2018-05-31 00:45:08,538 INFO waiting for app_web_fun to die
+2018-05-31 00:45:08,778 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:45:09,585 INFO supervisord started with pid 26436
+2018-05-31 00:45:10,588 INFO spawned: 'app_web_fun' with pid 26441
+2018-05-31 00:45:16,253 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:46:55,101 WARN received SIGINT indicating exit request
+2018-05-31 00:46:55,102 INFO waiting for app_web_fun to die
+2018-05-31 00:46:55,453 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:46:56,254 INFO supervisord started with pid 26624
+2018-05-31 00:46:57,257 INFO spawned: 'app_web_fun' with pid 26629
+2018-05-31 00:47:02,678 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:47:44,741 WARN received SIGINT indicating exit request
+2018-05-31 00:47:44,741 INFO waiting for app_web_fun to die
+2018-05-31 00:47:44,983 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:47:46,983 INFO supervisord started with pid 26721
+2018-05-31 00:47:47,987 INFO spawned: 'app_web_fun' with pid 26726
+2018-05-31 00:47:53,468 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:50:33,574 WARN received SIGINT indicating exit request
+2018-05-31 00:50:33,575 INFO waiting for app_web_fun to die
+2018-05-31 00:50:33,818 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:50:34,625 INFO supervisord started with pid 27189
+2018-05-31 00:50:35,630 INFO spawned: 'app_web_fun' with pid 27194
+2018-05-31 00:50:41,393 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:52:45,128 WARN received SIGINT indicating exit request
+2018-05-31 00:52:45,129 INFO waiting for app_web_fun to die
+2018-05-31 00:52:45,373 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:52:46,162 INFO supervisord started with pid 27409
+2018-05-31 00:52:47,166 INFO spawned: 'app_web_fun' with pid 27417
+2018-05-31 00:52:52,278 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:55:36,544 WARN received SIGINT indicating exit request
+2018-05-31 00:55:36,545 INFO waiting for app_web_fun to die
+2018-05-31 00:55:36,787 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:55:37,975 INFO supervisord started with pid 27699
+2018-05-31 00:55:38,978 INFO spawned: 'app_web_fun' with pid 27710
+2018-05-31 00:55:44,849 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:56:06,976 WARN received SIGINT indicating exit request
+2018-05-31 00:56:06,977 INFO waiting for app_web_fun to die
+2018-05-31 00:56:09,988 INFO waiting for app_web_fun to die
+2018-05-31 00:56:10,111 WARN received SIGINT indicating exit request
+2018-05-31 00:56:11,416 WARN received SIGINT indicating exit request
+2018-05-31 00:56:13,418 INFO waiting for app_web_fun to die
+2018-05-31 00:56:13,576 WARN received SIGINT indicating exit request
+2018-05-31 00:56:16,502 INFO waiting for app_web_fun to die
+2018-05-31 00:56:16,546 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:56:17,873 INFO supervisord started with pid 27779
+2018-05-31 00:56:18,875 INFO spawned: 'app_web_fun' with pid 27783
+2018-05-31 00:56:24,186 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:56:56,064 WARN received SIGINT indicating exit request
+2018-05-31 00:56:56,065 INFO waiting for app_web_fun to die
+2018-05-31 00:56:56,305 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:56:57,363 INFO supervisord started with pid 27883
+2018-05-31 00:56:58,367 INFO spawned: 'app_web_fun' with pid 27887
+2018-05-31 00:57:03,950 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:57:40,560 WARN received SIGINT indicating exit request
+2018-05-31 00:57:40,561 INFO waiting for app_web_fun to die
+2018-05-31 00:57:40,808 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:57:49,857 INFO supervisord started with pid 28007
+2018-05-31 00:57:50,860 INFO spawned: 'app_web_fun' with pid 28013
+2018-05-31 00:57:56,455 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 00:59:42,151 WARN received SIGINT indicating exit request
+2018-05-31 00:59:42,151 INFO waiting for app_web_fun to die
+2018-05-31 00:59:42,395 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 00:59:43,574 INFO supervisord started with pid 28205
+2018-05-31 00:59:44,577 INFO spawned: 'app_web_fun' with pid 28209
+2018-05-31 00:59:50,134 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 01:03:46,523 WARN received SIGINT indicating exit request
+2018-05-31 01:03:46,523 INFO waiting for app_web_fun to die
+2018-05-31 01:03:46,773 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 01:03:47,969 INFO supervisord started with pid 28599
+2018-05-31 01:03:48,972 INFO spawned: 'app_web_fun' with pid 28603
+2018-05-31 01:03:54,542 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 01:05:27,314 WARN received SIGINT indicating exit request
+2018-05-31 01:05:27,314 INFO waiting for app_web_fun to die
+2018-05-31 01:05:27,556 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 01:05:44,841 INFO supervisord started with pid 28823
+2018-05-31 01:05:45,844 INFO spawned: 'app_web_fun' with pid 28827
+2018-05-31 01:05:51,431 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 01:06:45,415 WARN received SIGINT indicating exit request
+2018-05-31 01:06:45,416 INFO waiting for app_web_fun to die
+2018-05-31 01:06:45,658 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 01:06:46,515 INFO supervisord started with pid 29659
+2018-05-31 01:06:47,519 INFO spawned: 'app_web_fun' with pid 29664
+2018-05-31 01:06:53,091 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 01:07:17,516 WARN received SIGHUP indicating restart request
+2018-05-31 19:57:34,546 INFO supervisord started with pid 10389
+2018-05-31 19:57:35,550 INFO spawned: 'app_web_fun' with pid 10394
+2018-05-31 19:57:41,186 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:00:25,698 WARN received SIGINT indicating exit request
+2018-05-31 20:00:25,698 INFO waiting for app_web_fun to die
+2018-05-31 20:00:25,948 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:00:27,278 INFO supervisord started with pid 11670
+2018-05-31 20:00:28,281 INFO spawned: 'app_web_fun' with pid 11682
+2018-05-31 20:00:33,496 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:09:11,420 WARN received SIGINT indicating exit request
+2018-05-31 20:09:11,420 INFO waiting for app_web_fun to die
+2018-05-31 20:09:11,778 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:09:12,776 INFO supervisord started with pid 12608
+2018-05-31 20:09:13,779 INFO spawned: 'app_web_fun' with pid 12620
+2018-05-31 20:09:19,184 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:22:54,567 WARN received SIGINT indicating exit request
+2018-05-31 20:22:54,568 INFO waiting for app_web_fun to die
+2018-05-31 20:22:54,813 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:22:55,789 INFO supervisord started with pid 13959
+2018-05-31 20:22:56,792 INFO spawned: 'app_web_fun' with pid 13963
+2018-05-31 20:23:01,962 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:23:56,518 WARN received SIGINT indicating exit request
+2018-05-31 20:23:56,519 INFO waiting for app_web_fun to die
+2018-05-31 20:23:56,759 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:23:57,619 INFO supervisord started with pid 14119
+2018-05-31 20:23:58,623 INFO spawned: 'app_web_fun' with pid 14125
+2018-05-31 20:24:04,146 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:26:16,575 WARN received SIGINT indicating exit request
+2018-05-31 20:26:16,576 INFO waiting for app_web_fun to die
+2018-05-31 20:26:16,919 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:26:18,036 INFO supervisord started with pid 14446
+2018-05-31 20:26:19,038 INFO spawned: 'app_web_fun' with pid 14459
+2018-05-31 20:26:24,361 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:28:28,294 WARN received SIGINT indicating exit request
+2018-05-31 20:28:28,294 INFO waiting for app_web_fun to die
+2018-05-31 20:28:28,540 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:28:30,261 INFO supervisord started with pid 14732
+2018-05-31 20:28:31,263 INFO spawned: 'app_web_fun' with pid 14737
+2018-05-31 20:28:36,332 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:39:59,178 WARN received SIGINT indicating exit request
+2018-05-31 20:39:59,179 INFO waiting for app_web_fun to die
+2018-05-31 20:39:59,537 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:40:00,287 INFO supervisord started with pid 15950
+2018-05-31 20:40:01,290 INFO spawned: 'app_web_fun' with pid 15954
+2018-05-31 20:40:07,258 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:40:09,703 WARN received SIGINT indicating exit request
+2018-05-31 20:40:09,704 INFO waiting for app_web_fun to die
+2018-05-31 20:40:10,062 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:41:49,653 INFO supervisord started with pid 16171
+2018-05-31 20:41:50,655 INFO spawned: 'app_web_fun' with pid 16175
+2018-05-31 20:41:56,237 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:43:23,040 WARN received SIGINT indicating exit request
+2018-05-31 20:43:23,041 INFO waiting for app_web_fun to die
+2018-05-31 20:43:23,406 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:43:24,474 INFO supervisord started with pid 16428
+2018-05-31 20:43:25,477 INFO spawned: 'app_web_fun' with pid 16432
+2018-05-31 20:43:30,512 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:44:08,247 WARN received SIGINT indicating exit request
+2018-05-31 20:44:08,248 INFO waiting for app_web_fun to die
+2018-05-31 20:44:08,595 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:44:09,680 INFO supervisord started with pid 16546
+2018-05-31 20:44:10,684 INFO spawned: 'app_web_fun' with pid 16550
+2018-05-31 20:44:16,231 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:44:42,815 WARN received SIGINT indicating exit request
+2018-05-31 20:44:42,815 INFO waiting for app_web_fun to die
+2018-05-31 20:44:43,059 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:44:44,551 INFO supervisord started with pid 16655
+2018-05-31 20:44:45,554 INFO spawned: 'app_web_fun' with pid 16668
+2018-05-31 20:44:51,139 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:44:51,719 WARN received SIGINT indicating exit request
+2018-05-31 20:44:51,720 INFO waiting for app_web_fun to die
+2018-05-31 20:44:52,063 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:45:04,245 INFO supervisord started with pid 16729
+2018-05-31 20:45:05,248 INFO spawned: 'app_web_fun' with pid 16736
+2018-05-31 20:45:11,124 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:47:05,112 WARN received SIGINT indicating exit request
+2018-05-31 20:47:05,115 INFO waiting for app_web_fun to die
+2018-05-31 20:47:05,462 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:47:06,387 INFO supervisord started with pid 16988
+2018-05-31 20:47:07,390 INFO spawned: 'app_web_fun' with pid 16994
+2018-05-31 20:47:12,435 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:48:08,837 WARN received SIGINT indicating exit request
+2018-05-31 20:48:08,838 INFO waiting for app_web_fun to die
+2018-05-31 20:48:09,186 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:48:10,235 INFO supervisord started with pid 17134
+2018-05-31 20:48:11,238 INFO spawned: 'app_web_fun' with pid 17138
+2018-05-31 20:48:16,832 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:48:30,670 WARN received SIGINT indicating exit request
+2018-05-31 20:48:30,670 INFO waiting for app_web_fun to die
+2018-05-31 20:48:31,016 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:48:31,881 INFO supervisord started with pid 17211
+2018-05-31 20:48:32,885 INFO spawned: 'app_web_fun' with pid 17216
+2018-05-31 20:48:38,590 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:49:38,343 WARN received SIGINT indicating exit request
+2018-05-31 20:49:38,345 INFO waiting for app_web_fun to die
+2018-05-31 20:49:38,590 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:49:39,594 INFO supervisord started with pid 17352
+2018-05-31 20:49:40,597 INFO spawned: 'app_web_fun' with pid 17357
+2018-05-31 20:49:46,228 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 20:59:40,159 WARN received SIGINT indicating exit request
+2018-05-31 20:59:40,160 INFO waiting for app_web_fun to die
+2018-05-31 20:59:40,417 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 20:59:41,455 INFO supervisord started with pid 18415
+2018-05-31 20:59:42,458 INFO spawned: 'app_web_fun' with pid 18419
+2018-05-31 20:59:47,632 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 21:05:25,493 WARN received SIGINT indicating exit request
+2018-05-31 21:05:25,494 INFO waiting for app_web_fun to die
+2018-05-31 21:05:25,846 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 21:05:26,722 INFO supervisord started with pid 19055
+2018-05-31 21:05:27,727 INFO spawned: 'app_web_fun' with pid 19060
+2018-05-31 21:05:33,100 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 21:06:03,847 WARN received SIGINT indicating exit request
+2018-05-31 21:06:03,848 INFO waiting for app_web_fun to die
+2018-05-31 21:06:04,198 INFO stopped: app_web_fun (exit status 0)
+2018-05-31 21:06:05,185 INFO supervisord started with pid 19171
+2018-05-31 21:06:06,189 INFO spawned: 'app_web_fun' with pid 19178
+2018-05-31 21:06:11,857 INFO success: app_web_fun entered RUNNING state, process has stayed up for > than 5 seconds (startsecs)
+2018-05-31 21:07:28,489 WARN received SIGINT indicating exit request
+2018-05-31 21:07:28,490 INFO waiting for app_web_fun to die
+2018-05-31 21:07:28,735 INFO stopped: app_web_fun (exit status 0)
