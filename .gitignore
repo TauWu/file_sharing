@@ -5,3 +5,12 @@
 *.egg-info
 dist
 build
+
+# Log Files
+*.log
+
+# VSCode Setting
+.vscode/
+
+# Swap File
+*.swp
